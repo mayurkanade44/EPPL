@@ -17,8 +17,8 @@ export const Carousel = () => {
             className="d-block w-100"
             style={{ height: 500 }}
             alt="img"
-            >
-            </img>
+          ></img>
+          <h4>Green Shield</h4>
         </div>
         <div className="carousel-item">
           <img
