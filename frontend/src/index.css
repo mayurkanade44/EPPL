@@ -1,7 +1,7 @@
 body::before {
   display: block;
   content: "";
-  height: 80px;
+  height: 70px;
 }
 
 body {
@@ -16,6 +16,15 @@ body {
   overflow-x: hidden;
 }
 
+/*============ NAVABR ============*/
+
 .nav-link h4:hover {
   color: black;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/*============ NAVABR ============*/

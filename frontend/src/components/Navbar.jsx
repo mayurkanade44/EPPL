@@ -16,7 +16,7 @@ export const Navbar = () => {
           </Link>
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarColor03"
@@ -24,7 +24,7 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarColor03">
             <ul className="navbar-nav ms-auto">
@@ -33,10 +33,34 @@ export const Navbar = () => {
                   <h4>Home</h4>
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/services" className="nav-link">
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <h4>Services</h4>
-                </Link>
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/services">
+                      Green Shield
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/services">
+                      Ratrid
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link className="dropdown-item" to="/services">
+                      Termiproof
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
