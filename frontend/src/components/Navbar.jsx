@@ -110,7 +110,7 @@ export const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
-                  <div className="btn btn-outline-dark">
+                  <div className="btn-quote btn-outline-dark">
                     <span>Get A Quote</span>
                     <div className="dot"></div>
                   </div>
