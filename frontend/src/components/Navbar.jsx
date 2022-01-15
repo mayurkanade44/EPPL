@@ -27,22 +27,22 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarColor03">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
+            <ul className="navbar-nav mx-auto">
+              <li className="nav-item ">
                 <Link to="/" className="nav-link">
-                  <h4>Home</h4>
+                  <h5>Know Us</h5>
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <div
                   className="nav-link"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <h4>Services</h4>
-                </a>
+                  <h5>Our Solutions</h5>
+                </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/services">
@@ -62,14 +62,58 @@ export const Navbar = () => {
                   </li>
                 </ul>
               </li>
+              <li className="nav-item dropdown">
+                <div
+                  className="nav-link"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <h5>Our Business Solutions</h5>
+                </div>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/services">
+                      Hospitality
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/services">
+                      Healthcare
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link className="dropdown-item" to="/services">
+                      Education
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
-                  <h4>About Us</h4>
+                  <h5>Products</h5>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/about" className="nav-link">
+                  <h5>Buzz</h5>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
-                  <h4>Contact</h4>
+                  <h5>Contact</h5>
+                </Link>
+              </li>
+            </ul>
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">
+                  <div className="btn btn-outline-dark">
+                    <span>Get A Quote</span>
+                    <div className="dot"></div>
+                  </div>
                 </Link>
               </li>
             </ul>

@@ -10,6 +10,22 @@ export const Carousel = () => {
       className="carousel slide"
       data-bs-ride="carousel"
     >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
@@ -18,7 +34,7 @@ export const Carousel = () => {
             style={{ height: 500 }}
             alt="img"
           ></img>
-          <h4>Green Shield</h4>
+        
         </div>
         <div className="carousel-item">
           <img
