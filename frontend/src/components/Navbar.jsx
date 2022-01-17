@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import eppl from "../images/eppl.jpeg";
+import eppl from "../images/eppl1.png";
 import rat from "../images/rat.jpeg";
 import gs from "../images/gs.jpeg";
 import termi from "../images/termi.jpeg";
@@ -13,7 +13,7 @@ export const Navbar = () => {
           <Link to="/" className="d-flex navbar-brand nav-link">
             <img
               src={eppl}
-              style={{ height: 60, width: 180, marginRight: 10 }}
+              style={{ height: 60, width: 220, marginRight: 10 }}
               alt="logo"
             />
           </Link>
