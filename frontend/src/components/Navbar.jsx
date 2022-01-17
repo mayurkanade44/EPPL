@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import  eppl from "../images/eppl.jpeg";
 
 export const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
         <div className="container">
           <Link to="/" className="d-flex navbar-brand nav-link">
-            {/* <img
-              src={}
+            <img
+              src={eppl}
               style={{ height: 50, marginRight: 10 }}
               alt="logo"
-            /> */}
-            <h4 className="pt-2">EPPL</h4>
+            />
+          
           </Link>
 
           <button
