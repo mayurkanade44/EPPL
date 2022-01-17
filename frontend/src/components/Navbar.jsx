@@ -1,19 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  eppl from "../images/eppl.jpeg";
+import eppl from "../images/eppl.jpeg";
+import rat from "../images/rat.jpeg";
+import gs from "../images/gs.jpeg";
+import termi from "../images/termi.jpeg";
 
 export const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
         <div className="container">
           <Link to="/" className="d-flex navbar-brand nav-link">
             <img
               src={eppl}
-              style={{ height: 50, marginRight: 10 }}
+              style={{ height: 60, width: 180, marginRight: 10 }}
               alt="logo"
             />
-          
           </Link>
 
           <button
@@ -47,18 +49,21 @@ export const Navbar = () => {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/services">
-                      Green Shield
+                      <img src={gs} alt="name" height={25} />
+                      <span style={{ paddingLeft: 10 }}>Green Shield</span>
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/services">
-                      Ratrid
+                      <img src={rat} alt="name" height={25} />
+                      <span style={{ paddingLeft: 10 }}>Ratrid</span>
                     </Link>
                   </li>
 
                   <li>
                     <Link className="dropdown-item" to="/services">
-                      Termiproof
+                      <img src={termi} alt="name" height={25} />
+                      <span style={{ paddingLeft: 10 }}>Termiproof</span>
                     </Link>
                   </li>
                 </ul>

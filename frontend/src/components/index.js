@@ -1,5 +1,7 @@
 import { Carousel } from "./Carousel";
 import { Navbar } from "./Navbar";
+import ServiceNavbar from "./ServiceNavbar";
 
 
-export { Navbar, Carousel };
+
+export { Navbar, Carousel, ServiceNavbar };
