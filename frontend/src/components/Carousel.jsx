@@ -31,7 +31,7 @@ export const Carousel = () => {
           <img
             src={c1}
             className="d-block w-100"
-            style={{ height: 500 }}
+            style={{ height: 650 }}
             alt="img"
           ></img>
         
@@ -40,7 +40,7 @@ export const Carousel = () => {
           <img
             src={c2}
             className="d-block w-100"
-            style={{ height: 500 }}
+            style={{ height: 650 }}
             alt="img"
           />
         </div>
