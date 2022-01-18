@@ -8,14 +8,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ab from "../images/im.svg";
 import "./contact.css";
-import { Link } from "react-router-dom";
 
 export const Contact = () => {
-  const link = "https://www.instagram.com/jersey_republicc";
   return (
     <div className="content">
       <h2 className="text-center mb-4">
-        <u>Contact Us</u>
+        <u>Let's Talk</u>
       </h2>
       <div className="container">
         <div className="row justify-content-center">
@@ -112,6 +110,9 @@ export const Contact = () => {
                   </div>
                 </form>
               </div>
+              <h2 className="text-center mb-4">
+                <u>Contact Us</u>
+              </h2>
               <div className="col-md-6 d-flex align-items-stretch">
                 <div className="info-wrap w-100 p-lg-5 p-4 img">
                   <p className="mb-4"></p>
@@ -154,16 +155,35 @@ export const Contact = () => {
                     </div>
                     <div className="text ps-3">
                       <p>
-                        <span>Website</span>{" "}
-                        <Link to={{ pathname: link }} target="_blank">
-                          epcorn.com
-                        </Link>
+                        <span>Website: </span>
+                        <a
+                          href="https://www.epcorn.com/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          www.epcorn.com
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">game</div>
+
+              <div className="col-md-6 mt-4">
+                <div
+                  id="map-container-google-11"
+                  className="z-depth-1-half map-container-6"
+                  style={{ height: 380 }}
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15081.881561274857!2d72.8365923!3d19.0870093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fb4ff8636b324f6!2sExpress%20Pesticides%20Private%20Limited!5e0!3m2!1sen!2sin!4v1642483456355!5m2!1sen!2sin"
+                    title="map"
+                    style={{ border: 0 }}
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
