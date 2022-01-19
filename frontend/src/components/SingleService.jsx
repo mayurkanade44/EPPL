@@ -25,7 +25,7 @@ const SingleService = () => {
         </div>
 
         <div className="col-md-4">
-          {featured_img && <img src={featured_img[0].url} alt='may' />}
+          {featured_img && <img src={featured_img[0].url} alt={name} />}
         </div>
         <div className="col-md-4">mayur</div>
       </div>
