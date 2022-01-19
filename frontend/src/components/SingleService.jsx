@@ -21,6 +21,7 @@ const SingleService = () => {
       <h1 className="text-center">{name}</h1>
       <div className="row">
         <div className="col-md-4">
+          <h5>Description:</h5>
           <p>{description}</p>
         </div>
 
@@ -28,6 +29,10 @@ const SingleService = () => {
           {featured_img && <img src={featured_img[0].url} alt={name} />}
         </div>
         <div className="col-md-4">mayur</div>
+      </div>
+      <div>
+        <h5>Treatment:</h5>
+        <p>{treatment}</p>
       </div>
     </div>
   );

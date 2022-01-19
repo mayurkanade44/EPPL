@@ -28,9 +28,11 @@ const ServiceHome = ({id, name, image, description}) => {
           <h2>{name}</h2>
           <div className="row">
             <div className="col-md-4">
-              <div className="card" style={{ width: 300 }}>
-                <img src={image} className="card-img-top" alt="image" />
-              </div>
+              <Link to={`/services/${id}`}>
+                <div className="card" style={{ width: 300 }}>
+                  <img src={image} className="card-img-top" alt="image" />
+                </div>
+              </Link>
             </div>
             <div className="col-md-8">
               <h2>{description.substring(0, 150)}...</h2>
