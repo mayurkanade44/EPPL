@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
-const ServiceHome = () => {
-  const { ref, inView } = useInView({ threshold: 0.2 });
+const ServiceHome = ({id, name, image, description}) => {
+  const { ref, inView } = useInView();
   const animations = useAnimation();
 
   useEffect(() => {
@@ -24,26 +25,18 @@ const ServiceHome = () => {
     <>
       <div ref={ref} className="container my-5">
         <motion.div animate={animations}>
-          <h2>Green Shield</h2>
+          <h2>{name}</h2>
           <div className="row">
             <div className="col-md-4">
-              <div class="card" style={{ width: 200 }}>
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+              <div className="card" style={{ width: 300 }}>
+                <img src={image} className="card-img-top" alt="image" />
               </div>
             </div>
             <div className="col-md-8">
-              <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Commodi, officia a in odio explicabo voluptas! Quae, consectetur
-                voluptatem? Inventore nesciunt unde voluptates asperiores
-                impedit quos, autem debitis magni enim quam.
-              </h2>
+              <h2>{description.substring(0, 150)}...</h2>
+              <Link className="btn btn-dark" to={`/services/${id}`}>
+                Know More
+              </Link>
             </div>
           </div>
         </motion.div>

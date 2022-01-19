@@ -20,7 +20,7 @@ const ServiceNavbar = () => {
           </a>
         </li>
       </ul>
-      <div id="myTabContent" className="tab-content">
+      {/* <div id="myTabContent" className="tab-content">
         <div className="tab-pane fade show active mt-3" id="home">
           <h1 className="text-center">Green Shield</h1>
         </div>
@@ -30,7 +30,7 @@ const ServiceNavbar = () => {
         <div className="tab-pane fade mt-3" id="termi">
           <h1 className="text-center">Termiproof</h1>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
