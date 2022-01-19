@@ -1,4 +1,5 @@
 import { Carousel } from "./Carousel";
+import Counter from "./Counter";
 import { Navbar } from "./Navbar";
 import ServiceHome from "./ServiceHome";
 import ServiceNavbar from "./ServiceNavbar";
@@ -12,4 +13,5 @@ export {
   ServiceHome,
   TestAnmi,
   SingleService,
+  Counter,
 };
