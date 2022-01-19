@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { motion,useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const ServiceHome = () => {
-  const { ref, inView } = useInView({threshold: 0.2});
+  const { ref, inView } = useInView({ threshold: 0.2 });
   const animations = useAnimation();
-  const anim = useAnimation();
 
   useEffect(() => {
     if (inView) {
@@ -21,12 +20,11 @@ const ServiceHome = () => {
     }
   }, [inView]);
 
-  
-
   return (
     <>
-      <div ref={ref} className="my-5">
+      <div ref={ref} className="container my-5">
         <motion.div animate={animations}>
+          <h2>Green Shield</h2>
           <div className="row">
             <div className="col-md-4">
               <div class="card" style={{ width: 200 }}>

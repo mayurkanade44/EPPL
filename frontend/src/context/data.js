@@ -34,3 +34,12 @@ export const carousel = [
     imgc: c2,
   },
 ];
+
+export const services = [
+  {
+    id: 1,
+    name: "Green Shield",
+    img: c1,
+    description: ''
+  }
+]
