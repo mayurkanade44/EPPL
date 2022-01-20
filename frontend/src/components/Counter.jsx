@@ -3,8 +3,7 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { upcounter } from "../context/data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
+
 
 const Counter = () => {
   const { ref, inView } = useInView();

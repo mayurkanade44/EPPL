@@ -3,9 +3,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-const ServiceHome = ({id, name, image, description}) => {
+const ServiceHome = ({ id, name, image, description }) => {
   const { ref, inView } = useInView({
-    triggerOnce:true
+    triggerOnce: true,
   });
   const animations = useAnimation();
 
@@ -21,6 +21,7 @@ const ServiceHome = ({id, name, image, description}) => {
         x: "-100vw",
       });
     }
+    // eslint-disable-next-line
   }, [inView]);
 
   return (
@@ -32,7 +33,7 @@ const ServiceHome = ({id, name, image, description}) => {
             <div className="col-md-4">
               <Link to={`/services/${id}`}>
                 <div className="card" style={{ width: 300 }}>
-                  <img src={image} className="card-img-top" alt="image" />
+                  <img src={image} className="card-img-top" alt={name} />
                 </div>
               </Link>
             </div>

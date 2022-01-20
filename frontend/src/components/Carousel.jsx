@@ -1,5 +1,4 @@
 import React from "react";
-import { carousel } from "../context/data";
 import c1 from "../images/c1.jpg";
 import c2 from "../images/c2.jpg";
 

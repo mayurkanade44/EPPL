@@ -7,6 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { DataProvider } from "./context/data_context";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <DataProvider>

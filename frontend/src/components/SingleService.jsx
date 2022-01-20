@@ -10,6 +10,7 @@ const SingleService = () => {
 
   useEffect(() => {
     fetchSingleService(id);
+    // eslint-disable-next-line
   }, [id]);
 
   return (

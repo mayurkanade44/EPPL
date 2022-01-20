@@ -1,10 +1,9 @@
 import React from "react";
-import { Carousel, ServiceHome, TestAnmi, Counter, Loading } from "../components";
+import { Carousel, ServiceHome, TestAnmi, Counter, Loading, Client } from "../components";
 import { useDataContext } from "../context/data_context";
 
 export const Home = () => {
   const { services, loading } = useDataContext();
-  console.log(services);
   return (
     <>
       {loading ? (
@@ -28,6 +27,7 @@ export const Home = () => {
               );
             })}
           <Counter />
+          <Client/>
         </div>
       )}
     </>

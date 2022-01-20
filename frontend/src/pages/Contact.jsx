@@ -1,15 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faPhoneAlt,
-  faEnvelope,
-  faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
 import ab from "../images/im.svg";
 import "./contact.css";
-import globe from '../images/globe.gif'
-import message from '../images/message.gif'
+import globe from "../images/globe.gif";
+import message from "../images/message.gif";
+import fax from "../images/fax.gif";
+import building from "../images/building.gif";
 
 export const Contact = () => {
   return (
@@ -120,7 +115,7 @@ export const Contact = () => {
                   <p className="mb-4"></p>
                   <div className="dbox w-100 d-flex align-items-center">
                     <div className="icon d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faHome} />
+                      <img src={building} alt="message" className="img-fluid" />
                     </div>
                     <div className="text ps-3">
                       <p>
@@ -131,7 +126,7 @@ export const Contact = () => {
                   </div>
                   <div className="dbox w-100 d-flex align-items-center">
                     <div className="icon d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faPhoneAlt} />
+                      <img src={fax} alt="message" className="img-fluid" />
                     </div>
                     <div className="text ps-3">
                       <p>
@@ -142,7 +137,6 @@ export const Contact = () => {
                   </div>
                   <div className="dbox w-100 d-flex align-items-center">
                     <div className="icon d-flex align-items-center justify-content-center">
-                      {/* <FontAwesomeIcon icon={faEnvelope} /> */}
                       <img src={message} alt="message" className="img-fluid" />
                     </div>
                     <div className="text ps-3">
