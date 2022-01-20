@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ab from "../images/im.svg";
 import "./contact.css";
+import globe from '../images/globe.gif'
+import message from '../images/message.gif'
 
 export const Contact = () => {
   return (
@@ -122,7 +124,7 @@ export const Contact = () => {
                     </div>
                     <div className="text ps-3">
                       <p>
-                        <span className="pt-5">Address:</span> Khira Industries,
+                        <span className="pt-5">Address: </span>Khira Industries,
                         Santacruz
                       </p>
                     </div>
@@ -133,25 +135,27 @@ export const Contact = () => {
                     </div>
                     <div className="text ps-3">
                       <p>
-                        <span>Phone:</span>{" "}
-                        <a href="tel://123456789">+ 123456789</a>
+                        <span>Phone: </span>
+                        <a href="tel://123456789">+123456789</a>
                       </p>
                     </div>
                   </div>
                   <div className="dbox w-100 d-flex align-items-center">
                     <div className="icon d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faEnvelope} />
+                      {/* <FontAwesomeIcon icon={faEnvelope} /> */}
+                      <img src={message} alt="message" className="img-fluid" />
                     </div>
                     <div className="text ps-3">
                       <p>
-                        <span>Email:</span>{" "}
+                        <span>Email: </span>
                         <a href="mailto:epcorn@yahoo.in">epcorn@yahoo.in</a>
                       </p>
                     </div>
                   </div>
                   <div className="dbox w-100 d-flex align-items-center">
                     <div className="icon d-flex align-items-center justify-content-center">
-                      <FontAwesomeIcon icon={faGlobe} />
+                      {/* <FontAwesomeIcon icon={faGlobe} /> */}
+                      <img src={globe} alt="globe" className="img-fluid" />
                     </div>
                     <div className="text ps-3">
                       <p>

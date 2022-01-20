@@ -32,6 +32,13 @@ body {
   overflow-x: hidden;
 }
 
+.heading-underline {
+  width: 11rem;
+  height: 0.2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 3.5rem;
+}
+
 /*============ NAVABR ============*/
 
 .nav-link h5:hover {

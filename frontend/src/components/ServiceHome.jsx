@@ -4,7 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
 const ServiceHome = ({id, name, image, description}) => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce:true
+  });
   const animations = useAnimation();
 
   useEffect(() => {
