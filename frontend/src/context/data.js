@@ -1,14 +1,18 @@
 import client from "../images/team.png";
-import projects from "../images/projects.png";
-import years from "../images/51.png";
+import termites from "../images/projects.png";
+import years from "../images/50new.png";
+import projects from "../images/construction.png";
 
+// clients logo images
 import lodha from "../images/lodha.png";
 import birla from "../images/birla.png";
 import apollo from "../images/apollo.png";
 import puma from "../images/puma.png";
-import piramal from "../images/piramal.png";
 import tata from "../images/tata.png";
 import cbre from "../images/cbre.png";
+
+// reviews images
+import man from "../images/man.png";
 
 export const links = [
   {
@@ -56,34 +60,40 @@ export const upcounter = [
     id: 4,
     name: "SQFT Area Of Termiproof Done",
     count: 200000,
+    img: termites,
   },
 ];
 
 export const clientsRTL = [
   {
     id: 1,
-    logo: lodha,
-    years: 10,
+    name: "Lodha",
+    years: ">10",
   },
   {
     id: 2,
-    logo: piramal,
-    years: 5,
+    name: "Piramal",
+    years: ">5",
   },
   {
     id: 3,
-    logo: birla,
-    years: 20,
+    name: "Apollo",
+    years: ">20",
   },
   {
     id: 4,
-    logo: puma,
-    years: 5,
+    name: "Puma",
+    years: "<5",
   },
   {
     id: 5,
-    logo: tata,
-    years: 10,
+    name: "Tata",
+    years: ">10",
+  },
+  {
+    id: 6,
+    name: "Macdonald",
+    years: ">5",
   },
 ];
 
@@ -91,26 +101,70 @@ export const clientsLTR = [
   {
     id: 1,
     logo: apollo,
-    years: 5,
   },
   {
     id: 2,
     logo: cbre,
-    years: 5,
   },
   {
     id: 3,
     logo: birla,
-    years: 20,
   },
   {
     id: 4,
     logo: puma,
-    years: 5,
   },
   {
     id: 5,
     logo: tata,
-    years: 10,
+  },
+  {
+    id: 6,
+    logo: lodha,
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Mayur",
+    designation: "Employee",
+    text: "good service",
+    image: man,
+  },
+  {
+    id: 2,
+    name: "Lekha",
+    designation: "CEO (Natco)",
+    text: "Very good service",
+    image: man,
+  },
+  {
+    id: 3,
+    name: "Vishal",
+    designation: "Manager",
+    text: "Very professional",
+    image: man,
+  },
+  {
+    id: 4,
+    name: "Rupesh",
+    designation: "CFO",
+    text: "Very good",
+    image: man,
+  },
+  {
+    id: 5,
+    name: "Sayalee",
+    designation: "CMD",
+    text: "Very Good",
+    image: man,
+  },
+  {
+    id: 6,
+    name: "Manoj",
+    designation: "VP",
+    text: "Very Nice",
+    image: man,
   },
 ];

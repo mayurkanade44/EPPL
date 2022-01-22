@@ -7,6 +7,7 @@ import ServiceHome from "./ServiceHome";
 import ServiceNavbar from "./ServiceNavbar";
 import SingleService from "./SingleService";
 import TestAnmi from "./TestAnmi";
+import Reviews from "./Reviews"
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Counter,
   Loading,
   Client,
+  Reviews,
 };
