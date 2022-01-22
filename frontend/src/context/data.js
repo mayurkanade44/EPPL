@@ -1,8 +1,14 @@
-import c1 from "../images/c1.jpg";
-import c2 from "../images/c2.jpg";
-import client from "../images/team.png"
-import projects from "../images/projects.png"
-import years from "../images/51.png"
+import client from "../images/team.png";
+import projects from "../images/projects.png";
+import years from "../images/51.png";
+
+import lodha from "../images/lodha.png";
+import birla from "../images/birla.png";
+import apollo from "../images/apollo.png";
+import puma from "../images/puma.png";
+import piramal from "../images/piramal.png";
+import tata from "../images/tata.png";
+import cbre from "../images/cbre.png";
 
 export const links = [
   {
@@ -27,32 +33,12 @@ export const links = [
   },
 ];
 
-export const carousel = [
-  {
-    id: 1,
-    imgc: c1,
-  },
-  {
-    id: 2,
-    imgc: c2,
-  },
-];
-
-export const services = [
-  {
-    id: 1,
-    name: "Green Shield",
-    img: c1,
-    description: "",
-  },
-];
-
 export const upcounter = [
   {
     id: 1,
     name: "Years Of Experince",
     count: 50,
-    img: years
+    img: years,
   },
   {
     id: 2,
@@ -64,11 +50,67 @@ export const upcounter = [
     id: 3,
     name: "Projetcs Completed",
     count: 2000,
-    img: projects
+    img: projects,
   },
   {
     id: 4,
     name: "SQFT Area Of Termiproof Done",
     count: 200000,
+  },
+];
+
+export const clientsRTL = [
+  {
+    id: 1,
+    logo: lodha,
+    years: 10,
+  },
+  {
+    id: 2,
+    logo: piramal,
+    years: 5,
+  },
+  {
+    id: 3,
+    logo: birla,
+    years: 20,
+  },
+  {
+    id: 4,
+    logo: puma,
+    years: 5,
+  },
+  {
+    id: 5,
+    logo: tata,
+    years: 10,
+  },
+];
+
+export const clientsLTR = [
+  {
+    id: 1,
+    logo: apollo,
+    years: 5,
+  },
+  {
+    id: 2,
+    logo: cbre,
+    years: 5,
+  },
+  {
+    id: 3,
+    logo: birla,
+    years: 20,
+  },
+  {
+    id: 4,
+    logo: puma,
+    years: 5,
+  },
+  {
+    id: 5,
+    logo: tata,
+    years: 10,
   },
 ];

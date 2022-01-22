@@ -1,6 +1,6 @@
 import React from "react";
-import c1 from "../images/c1.jpg";
-import c2 from "../images/c2.jpg";
+import c1 from "../images/fog.jpeg";
+import c2 from "../images/fog1.jpeg";
 
 export const Carousel = () => {
   return (
@@ -33,7 +33,6 @@ export const Carousel = () => {
             style={{ height: 650 }}
             alt="img"
           ></img>
-        
         </div>
         <div className="carousel-item">
           <img
