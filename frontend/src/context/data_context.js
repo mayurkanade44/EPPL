@@ -8,6 +8,8 @@ const intialState = {
   loading: false,
   services: [],
   singleService: {},
+  business: [],
+  singleBusiness: {}
 };
 
 export const DataProvider = ({ children }) => {
@@ -40,8 +42,22 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  const fetchBusiness = async () => {
+    dispatch({ type: "LOADING" });
+    try {
+      const res = await axios.get(`${url}business`);
+      dispatch({
+        type: "BUSINESS_SUCCESS",
+        payload: res.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     fetchServices();
+    fetchBusiness()
     // eslint-disable-next-line
   }, []);
 

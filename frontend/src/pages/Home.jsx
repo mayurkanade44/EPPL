@@ -12,6 +12,7 @@ import { clientsRTL, clientsLTR } from "../context/data";
 
 export const Home = () => {
   const { services, loading } = useDataContext();
+
   return (
     <>
       {loading ? (

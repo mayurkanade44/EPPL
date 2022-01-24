@@ -8,6 +8,7 @@ import ServiceNavbar from "./ServiceNavbar";
 import SingleService from "./SingleService";
 import TestAnmi from "./TestAnmi";
 import Reviews from "./Reviews"
+import BusinessNavbar from "./BusinessNavbar";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Loading,
   Client,
   Reviews,
+  BusinessNavbar
 };

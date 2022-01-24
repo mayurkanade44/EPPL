@@ -69,33 +69,9 @@ export const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <div
-                  className="nav-link"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <Link to="/business" className="nav-link">
                   <h5>Our Business Solutions</h5>
-                </div>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <Link className="dropdown-item" to="/services">
-                      Hospitality
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/services">
-                      Healthcare
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link className="dropdown-item" to="/services">
-                      Education
-                    </Link>
-                  </li>
-                </ul>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
