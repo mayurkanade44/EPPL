@@ -10,6 +10,7 @@ const Reviews = () => {
     slidesToShow: 3,
     autoplay: true,
     slidesToScroll: 3,
+    pauseOnHover: false,
   };
   return (
     <div className="container">

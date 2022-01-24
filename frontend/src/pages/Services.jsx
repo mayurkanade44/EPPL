@@ -3,7 +3,7 @@ import { ServiceNavbar, SingleService } from "../components";
 
 export const Services = () => {
   return (
-    <div className="container">
+    <div>
       <ServiceNavbar />
       <SingleService />
     </div>

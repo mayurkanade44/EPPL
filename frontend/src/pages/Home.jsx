@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Carousel,
   ServiceHome,
@@ -12,6 +12,13 @@ import { clientsRTL, clientsLTR } from "../context/data";
 
 export const Home = () => {
   const { services, loading } = useDataContext();
+  const [featured, setFeatured] = useState([]);
+
+  useEffect(() => {
+    const filtered = services.filter((service) => service.featured === true);
+    setFeatured(filtered);
+  },[]);
+  console.log(featured);
 
   return (
     <>
@@ -22,7 +29,7 @@ export const Home = () => {
           <Carousel />
           <h1 className="text-center mt-4">Services</h1>
           {services &&
-            services.map((service) => {
+            services.slice(0, 5).map((service) => {
               const { id, name, img, description } = service;
               return (
                 <div key={id}>

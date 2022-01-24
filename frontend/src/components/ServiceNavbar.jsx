@@ -5,13 +5,19 @@ import { useDataContext } from "../context/data_context";
 const ServiceNavbar = () => {
   const { services } = useDataContext();
   const { id } = useParams();
+  const sort = services.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
   return (
-    <div>
+    <div className="container">
       <ul className="nav nav-tabs">
-        {services.map((service) => {
+        {sort.map((service) => {
           return (
             <li className="nav-item" key={service.id}>
-              <Link className={`nav-link ${id === service.id && 'active'}`} to={`/services/${service.id}`}>
+              <Link
+                className={`nav-link ${id === service.id && "active"}`}
+                to={`/services/${service.id}`}
+              >
                 {service.name}
               </Link>
             </li>

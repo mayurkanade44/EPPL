@@ -1,32 +1,19 @@
-/* :root {
-  --bg: #3c465c;
-  --primary: #78ffcd;
-  --solid: #fff;
-  --btn-w: 8em;
-  --dot-w: calc(var(--btn-w) * 0.2);
-  --tr-X: calc(var(--btn-w) - var(--dot-w));
-} */
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 * {
-  box-sizing: border-box;
-}
-*:before,
-*:after {
   box-sizing: border-box;
 }
 
 body::before {
   display: block;
   content: "";
-  height: 80px;
+  padding: 2.7rem 0;
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Oswald"
-    sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Oswald" sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -40,6 +27,10 @@ body {
   background-color: #1ebba3;
   margin: 0 auto 1rem;
 }
+
+/* .content {
+  padding: 7rem 0;
+} */
 
 /*============ NAVABR ============*/
 
@@ -142,11 +133,10 @@ body {
   line-height: 2;
 }
 
-
 .carotext {
   position: absolute;
   bottom: 50px;
-  left: 43%;
+  left: 5%;
   font-size: 4rem;
   font-weight: 600;
 }

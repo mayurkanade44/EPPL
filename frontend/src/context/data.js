@@ -14,6 +14,11 @@ import cbre from "../images/cbre.png";
 // reviews images
 import man from "../images/man.png";
 
+// carousel images
+import c1 from "../images/fog.jpeg";
+import c2 from "../images/fog1.jpeg";
+import c3 from "../images/stq.jpg";
+
 export const links = [
   {
     id: 1,
@@ -34,6 +39,27 @@ export const links = [
     id: 3,
     text: "contact",
     url: "/conatct",
+  },
+];
+
+export const carousel = [
+  {
+    id: 1,
+    img: c1,
+    name: "Flyban",
+    class: "animate__animated animate__zoomInDown",
+  },
+  {
+    id: 1,
+    img: c2,
+    name: "Mosquito",
+    class: "animate__animated animate__zoomInDown",
+  },
+  {
+    id: 2,
+    img: c3,
+    name: "Service Team",
+    class: "animate__animated animate__zoomInDown",
   },
 ];
 

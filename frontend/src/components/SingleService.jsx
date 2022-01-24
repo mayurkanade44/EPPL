@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
-import {Loading} from '../components'
+import { Loading, Carousel, ServiceCarousel } from "../components";
 
 const SingleService = () => {
-  const { fetchSingleService, singleService, loading } = useDataContext();
-  const { name, description, featured_img, treatment } = singleService;
+  const { fetchSingleService, singleService, loading, services } =
+    useDataContext();
+  const { name, description, featured_img, treatment, features, carousel_img } =
+    singleService;
+
   const { id } = useParams();
 
   useEffect(() => {
@@ -19,6 +22,7 @@ const SingleService = () => {
         <Loading />
       ) : (
         <>
+          <ServiceCarousel images={carousel_img} />
           <h1 className="text-center">{name}</h1>
           <div className="row">
             <div className="col-md-4">
@@ -29,7 +33,9 @@ const SingleService = () => {
             <div className="col-md-4">
               {featured_img && <img src={featured_img[0].url} alt={name} />}
             </div>
-            <div className="col-md-4">mayur</div>
+            <div className="col-md-4">
+              <p>mayur</p>
+            </div>
           </div>
           <div>
             <h5>Treatment:</h5>
