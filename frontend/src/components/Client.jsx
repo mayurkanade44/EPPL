@@ -39,7 +39,7 @@ const Client = ({ data, rtl }) => {
           {data.map((data) => {
             const { id, name, years } = data;
             return (
-              <div key={id}>
+              <div key={id} className="my-4">
                 <h2
                   className="d-inline"
                   style={{ fontFamily: "fantasy", color: "blueviolet" }}

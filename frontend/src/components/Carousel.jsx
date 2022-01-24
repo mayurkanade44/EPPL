@@ -1,6 +1,7 @@
 import React from "react";
 import c1 from "../images/fog.jpeg";
 import c2 from "../images/fog1.jpeg";
+import "animate.css";
 
 export const Carousel = () => {
   return (
@@ -9,12 +10,12 @@ export const Carousel = () => {
       className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-indicators">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
-          class="active"
+          className="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -33,6 +34,9 @@ export const Carousel = () => {
             style={{ height: 650 }}
             alt="img"
           ></img>
+          <h1 className="carotext text-center animate__animated animate__backInLeft">
+            Fogging
+          </h1>
         </div>
         <div className="carousel-item">
           <img

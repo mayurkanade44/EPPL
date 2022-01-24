@@ -141,3 +141,12 @@ body {
   max-width: 35em;
   line-height: 2;
 }
+
+
+.carotext {
+  position: absolute;
+  bottom: 50px;
+  left: 43%;
+  font-size: 4rem;
+  font-weight: 600;
+}
