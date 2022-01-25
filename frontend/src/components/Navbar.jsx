@@ -4,8 +4,10 @@ import eppl from "../images/eppl1.png";
 import rat from "../images/rat.jpeg";
 import gs from "../images/gs.jpeg";
 import termi from "../images/termi.jpeg";
+import { useDataContext } from "../context/data_context";
 
 export const Navbar = () => {
+  const { services } = useDataContext();
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
@@ -31,11 +33,6 @@ export const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarColor03">
             <ul className="navbar-nav mx-auto">
-              <li className="nav-item ">
-                <Link to="/" className="nav-link">
-                  <h5>Know Us</h5>
-                </Link>
-              </li>
               <li className="nav-item dropdown">
                 <div
                   className="nav-link"
@@ -47,30 +44,28 @@ export const Navbar = () => {
                   <h5>Our Solutions</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <Link className="dropdown-item" to="/services">
-                      <img src={gs} alt="name" height={25} />
-                      <span style={{ paddingLeft: 10 }}>Green Shield</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/services">
-                      <img src={rat} alt="name" height={25} />
-                      <span style={{ paddingLeft: 10 }}>Ratrid</span>
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link className="dropdown-item" to="/services">
-                      <img src={termi} alt="name" height={25} />
-                      <span style={{ paddingLeft: 10 }}>Termiproof</span>
-                    </Link>
-                  </li>
+                  {services.map((service)=> {
+                    return (
+                      <li key={service.id}>
+                        <Link className="dropdown-item" to={`/services/${service.id}`}>
+                          <img src={service.img} alt="name" height={25} />
+                          <span style={{ paddingLeft: 10 }}>
+                            {service.name}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <Link to="/business" className="nav-link">
                   <h5>Our Business Solutions</h5>
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link to="/" className="nav-link">
+                  <h5>Know Us</h5>
                 </Link>
               </li>
               <li className="nav-item">

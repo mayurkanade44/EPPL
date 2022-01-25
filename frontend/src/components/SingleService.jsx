@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
-import { Loading, Carousel, ServiceCarousel } from "../components";
+import { Loading, ServiceCarousel } from "../components";
+import point from "../images/point.gif";
 
 const SingleService = () => {
+  const [points, setPoints] = useState([]);
   const { fetchSingleService, singleService, loading, services } =
     useDataContext();
   const { name, description, featured_img, treatment, features, carousel_img } =
@@ -13,8 +15,13 @@ const SingleService = () => {
 
   useEffect(() => {
     fetchSingleService(id);
+
+    if (features) {
+      const temp = features.split(".");
+      setPoints(temp);
+    }
     // eslint-disable-next-line
-  }, [id]);
+  }, [id, features]);
 
   return (
     <div className="container">
@@ -34,7 +41,23 @@ const SingleService = () => {
               {featured_img && <img src={featured_img[0].url} alt={name} />}
             </div>
             <div className="col-md-4">
-              <p>mayur</p>
+              <h5>Features:</h5>
+              <div>
+                <ul style={{ listStyleType: "none" }}>
+                  {points &&
+                    points.slice(0, 5).map((item, index) => {
+                      return (
+                        <li
+                          className="animate__animated animate__rubberBand mb-2"
+                          key={index}
+                        >
+                          <img className="d-inline rotate" src={point} alt="" />
+                          <p className="d-inline">{` ${item}`}</p>
+                        </li>
+                      );
+                    })}
+                </ul>
+              </div>
             </div>
           </div>
           <div>

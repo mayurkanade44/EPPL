@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
+import "animate.css";
 
 const ServiceNavbar = () => {
   const { services } = useDataContext();

@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
+:root {
+  --bg: #3c465c;
+  --primary: #78ffcd;
+  --solid: #fff;
+  --btn-w: 8em;
+  --dot-w: calc(var(--btn-w) * 0.2);
+  --tr-X: calc(var(--btn-w) - var(--dot-w));
+}
 * {
   box-sizing: border-box;
 }
@@ -27,10 +35,6 @@ body {
   background-color: #1ebba3;
   margin: 0 auto 1rem;
 }
-
-/* .content {
-  padding: 7rem 0;
-} */
 
 /*============ NAVABR ============*/
 
@@ -139,4 +143,9 @@ body {
   left: 5%;
   font-size: 4rem;
   font-weight: 600;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+  height: 30px;
 }
