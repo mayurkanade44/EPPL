@@ -7,6 +7,7 @@ const Reviews = () => {
   const settings = {
     infinite: true,
     speed: 500,
+    arrows: false,
     slidesToShow: 3,
     autoplay: true,
     slidesToScroll: 3,

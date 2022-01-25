@@ -12,6 +12,7 @@ const ServiceCarousel = ({ images = [{ url: "" }] }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
+    arrows: false,
   };
   return (
     <div>
