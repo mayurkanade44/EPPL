@@ -95,31 +95,37 @@ export const clientsRTL = [
     id: 1,
     name: "Lodha",
     years: ">10",
+    col: "#D47AE8",
   },
   {
     id: 2,
     name: "Piramal",
     years: ">5",
+    col: "#7CD1B8",
   },
   {
     id: 3,
     name: "Apollo",
     years: ">20",
+    col: "#FE7E6D",
   },
   {
     id: 4,
     name: "Puma",
     years: "<5",
+    col: "#7CD1B8",
   },
   {
     id: 5,
     name: "Tata",
     years: ">10",
+    col: "#D47AE8",
   },
   {
     id: 6,
     name: "Macdonald",
     years: ">5",
+    col: "#7CD1B8",
   },
 ];
 

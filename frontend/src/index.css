@@ -19,8 +19,7 @@ body::before {
 }
 
 body {
-  background-color: #ffffff;
-  background-image: linear-gradient(270deg, #ffffff 30%, #b1eeff 84%);
+  background-image: linear-gradient(270deg, #fffffb 30%, #ace0f9 100%);
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

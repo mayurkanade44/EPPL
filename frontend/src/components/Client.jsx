@@ -37,14 +37,17 @@ const Client = ({ data, rtl }) => {
       ) : (
         <Slider {...settings}>
           {data.map((data) => {
-            const { id, name, years } = data;
+            const { id, name, years, col } = data;
             return (
               <div key={id} className="my-4">
                 <h2
                   className="d-inline"
                   style={{ fontFamily: "fantasy", color: "blueviolet" }}
                 >{`${name}`}</h2>
-                <h4 className="d-inline">{` ${years} years`}</h4>
+                <h4
+                  className="d-inline"
+                  style={{ color: col }}
+                >{` ${years} years`}</h4>
               </div>
             );
           })}
