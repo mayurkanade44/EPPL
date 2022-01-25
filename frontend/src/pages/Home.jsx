@@ -17,8 +17,8 @@ export const Home = () => {
   useEffect(() => {
     const filtered = services.filter((service) => service.featured === true);
     setFeatured(filtered);
-  },[]);
-  console.log(featured);
+  },[services]);
+
 
   return (
     <>
@@ -28,8 +28,8 @@ export const Home = () => {
         <div>
           <Carousel />
           <h1 className="text-center mt-4">Services</h1>
-          {services &&
-            services.slice(0, 5).map((service) => {
+          {featured &&
+            featured.map((service) => {
               const { id, name, img, description } = service;
               return (
                 <div key={id}>
