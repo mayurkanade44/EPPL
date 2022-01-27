@@ -1,12 +1,11 @@
 import React from "react";
-import Client from "../components/Client";
-
+import { FAQ } from "../components";
 
 export const About = () => {
   return (
     <div>
       <h1>About Us</h1>
-      <Client />
+      <FAQ/>
     </div>
   );
 };

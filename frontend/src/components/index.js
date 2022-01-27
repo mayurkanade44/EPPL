@@ -10,6 +10,7 @@ import TestAnmi from "./TestAnmi";
 import Reviews from "./Reviews";
 import BusinessNavbar from "./BusinessNavbar";
 import ServiceCarousel from "./ServiceCarousel";
+import FAQ from "./FAQ";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Reviews,
   BusinessNavbar,
   ServiceCarousel,
+  FAQ,
 };
