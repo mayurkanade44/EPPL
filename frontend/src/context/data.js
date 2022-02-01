@@ -19,6 +19,11 @@ import c1 from "../images/fog.jpeg";
 import c2 from "../images/fog1.jpeg";
 import c3 from "../images/stq.jpg";
 
+import fb from "../images/facebook.png";
+import insta from "../images/instagram.png";
+import link from "../images/linkedin.png";
+import whatsapp from "../images/whatsapp.png";
+
 export const links = [
   {
     id: 1,
@@ -60,6 +65,25 @@ export const carousel = [
     img: c3,
     name: "Service Team",
     class: "animate__animated animate__zoomInDown",
+  },
+];
+
+export const social = [
+  {
+    id: 1,
+    img: fb,
+  },
+  {
+    id: 2,
+    img: insta,
+  },
+  {
+    id: 3,
+    img: link,
+  },
+  {
+    id: 4,
+    img: whatsapp,
   },
 ];
 
