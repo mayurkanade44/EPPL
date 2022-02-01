@@ -11,6 +11,7 @@ import Reviews from "./Reviews";
 import BusinessNavbar from "./BusinessNavbar";
 import ServiceCarousel from "./ServiceCarousel";
 import FAQ from "./FAQ";
+import AboutExpandCard from "./AboutExpandCard";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   BusinessNavbar,
   ServiceCarousel,
   FAQ,
+  AboutExpandCard,
 };

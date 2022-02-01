@@ -200,3 +200,21 @@ export const reviews = [
     image: man,
   },
 ];
+
+export const faq = [
+  {
+    id: 1,
+    ques: "Is Staff Vaccinated?",
+    ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
+  },
+  {
+    id: 2,
+    ques: "What Type Of Services Do You Offer?",
+    ans: "Green Shield, Ratrid, Bugsfree, Flyban, Termiproof",
+  },
+  {
+    id: 3,
+    ques: "What Are Prices For Your Services",
+    ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
+  },
+];
