@@ -10,7 +10,7 @@ export const About = () => {
       {faq.map((faq) => {
         return <FAQ key={faq.id} {...faq}></FAQ>;
       })}
-    
+      <Journey/>
     </div>
   );
 };
