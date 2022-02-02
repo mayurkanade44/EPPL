@@ -1,25 +1,34 @@
 import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
-const FAQ = ({ques, ans}) => {
+const FAQ = ({ data }) => {
   const [showInfo, setShowInfo] = useState(false);
   const toggleClass = () => {
     setShowInfo(!showInfo);
   };
   return (
-    <div className="container-fluid">
-      <div class="faq-container">
-        <div class={showInfo ? "faq active" : "faq"}>
-          <h3 class="faq-title">{ques}</h3>
+    <div className="container">
+      <div className="row">
+        {data.map((d)=>{
+          return (
+            <div className="col-md-6" key={d.id}>
+              <div className="faq-container">
+                <div className={showInfo ? "faq active" : "faq"}>
+                  <h5 className="faq-title">{d.ques}</h5>
 
-          <p class="faq-text">{ans}</p>
+                  <p className="faq-text">{d.ans}</p>
 
-          <button class="faq-toggle" onClick={toggleClass}>
-            <FontAwesomeIcon icon={faArrowDown} size="lg" />
-          </button>
-        </div>
+                  <button className="faq-toggle" onClick={toggleClass}>
+                    <FontAwesomeIcon icon={faArrowDown} size="lg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+        
       </div>
     </div>
   );

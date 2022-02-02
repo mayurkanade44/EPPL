@@ -238,7 +238,12 @@ export const faq = [
   },
   {
     id: 3,
-    ques: "What Are Prices For Your Services",
+    ques: "What Are Prices For Your Services?",
+    ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
+  },
+  {
+    id: 4,
+    ques: "Is Their Any Warrenty?",
     ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
   },
 ];

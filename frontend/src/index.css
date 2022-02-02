@@ -168,11 +168,12 @@ h1 {
   background-color: transparent;
   border: 1px solid #9fa4a8;
   border-radius: 10px;
-  margin: 20px 0;
-  padding: 30px;
+  margin: 10px 0;
+  padding: 18px;
   position: relative;
   overflow: hidden;
   transition: 0.3s ease;
+  background-color: white;
 }
 
 .faq.active {
@@ -224,7 +225,7 @@ h1 {
   font-size: 16px;
   padding: 0;
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 30px;
   height: 30px;
   width: 30px;

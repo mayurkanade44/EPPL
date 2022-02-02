@@ -29,12 +29,13 @@ export const Home = () => {
           <Carousel />
           <h1 className="text-center mt-4">Services</h1>
           {featured &&
-            featured.map((service) => {
+            featured.map((service, index) => {
               const { id, name, img, description } = service;
               return (
                 <div key={id}>
                   <ServiceHome
                     id={id}
+                    index={index}
                     name={name}
                     image={img}
                     description={description}
