@@ -13,6 +13,7 @@ import ServiceCarousel from "./ServiceCarousel";
 import FAQ from "./FAQ";
 import AboutExpandCard from "./AboutExpandCard";
 import Footer from "./Footer";
+import Journey from "./Journey";
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   FAQ,
   AboutExpandCard,
   Footer,
+  Journey,
 };

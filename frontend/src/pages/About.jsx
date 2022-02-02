@@ -1,5 +1,5 @@
 import React from "react";
-import { FAQ, AboutExpandCard } from "../components";
+import { FAQ, AboutExpandCard, Journey } from "../components";
 import { faq } from "../context/data";
 
 export const About = () => {
@@ -10,6 +10,7 @@ export const About = () => {
       {faq.map((faq) => {
         return <FAQ key={faq.id} {...faq}></FAQ>;
       })}
+    
     </div>
   );
 };
