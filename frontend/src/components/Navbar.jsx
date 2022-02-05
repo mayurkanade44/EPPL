@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import eppl from "../images/eppl1.png";
-import rat from "../images/rat.jpeg";
-import gs from "../images/gs.jpeg";
-import termi from "../images/termi.jpeg";
 import { useDataContext } from "../context/data_context";
 
 export const Navbar = () => {
@@ -44,10 +41,13 @@ export const Navbar = () => {
                   <h5>Our Solutions</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {services.map((service)=> {
+                  {services.map((service) => {
                     return (
                       <li key={service.id}>
-                        <Link className="dropdown-item" to={`/services/${service.id}`}>
+                        <Link
+                          className="dropdown-item"
+                          to={`/services/${service.id}`}
+                        >
                           <img src={service.img} alt="name" height={25} />
                           <span style={{ paddingLeft: 10 }}>
                             {service.name}
@@ -69,7 +69,7 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">
+                <Link to="/products" className="nav-link">
                   <h5>Products</h5>
                 </Link>
               </li>

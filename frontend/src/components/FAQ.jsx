@@ -11,12 +11,12 @@ const FAQ = ({ data }) => {
   return (
     <div className="container">
       <div className="row">
-        {data.map((d)=>{
+        {data.map((d) => {
           return (
             <div className="col-md-6" key={d.id}>
               <div className="faq-container">
                 <div className={showInfo ? "faq active" : "faq"}>
-                  <h5 className="faq-title">{d.ques}</h5>
+                  <h5 className="faq-title ">{d.ques}</h5>
 
                   <p className="faq-text">{d.ans}</p>
 
@@ -28,7 +28,6 @@ const FAQ = ({ data }) => {
             </div>
           );
         })}
-        
       </div>
     </div>
   );
