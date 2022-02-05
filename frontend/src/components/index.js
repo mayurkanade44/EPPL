@@ -14,6 +14,7 @@ import FAQ from "./FAQ";
 import AboutExpandCard from "./AboutExpandCard";
 import Footer from "./Footer";
 import Journey from "./Journey";
+import Products from "./Products";
 
 export {
   Navbar,
@@ -32,4 +33,5 @@ export {
   AboutExpandCard,
   Footer,
   Journey,
+  Products,
 };
