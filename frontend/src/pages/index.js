@@ -4,6 +4,6 @@ import { Services } from "./Services";
 import { Contact } from "./Contact";
 import Error from "./Error";
 import Business from "./Business";
-import Products from "./Products";
+import Product from "./Products";
 
-export { Home, About, Services, Error, Contact, Business, Products };
+export { Home, About, Services, Error, Contact, Business, Product };

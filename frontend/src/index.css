@@ -252,6 +252,10 @@ h1 {
   background-color: #9fa4a8;
 }
 
+.faq.active .faq-title {
+  color: goldenrod;
+}
+
 /*============ Our Journey ============*/
 
 .page-section {
@@ -454,6 +458,18 @@ h1 {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+}
+
+/*============ Products ============*/
+
+.category img,
+.course-item img {
+    transition: .5s;
+}
+
+.category a:hover img,
+.course-item:hover img {
+    transform: scale(1.1);
 }
 
 /*============ Footer ============*/

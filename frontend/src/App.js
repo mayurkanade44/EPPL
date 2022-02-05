@@ -1,5 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, About, Services, Error, Contact, Business } from "./pages";
+import {
+  Home,
+  About,
+  Services,
+  Error,
+  Contact,
+  Business,
+  Product,
+} from "./pages";
 import { Navbar, Footer } from "./components";
 
 function App() {
@@ -11,6 +19,7 @@ function App() {
         <Route path="/services/:id" element={<Services />} />
         <Route path="/business" element={<Business />} />
         <Route path="/knowus" element={<About></About>} />
+        <Route path="/products" element={<Product></Product>} />
         <Route path="/contact" element={<Contact></Contact>} />
         <Route path="*" element={<Error></Error>} />
       </Routes>
