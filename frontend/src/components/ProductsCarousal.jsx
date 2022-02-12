@@ -11,6 +11,7 @@ const ProductsCarousal = () => {
   return (
     <div className="carousel-background">
       <h1 className="text-center pt-4">Other Products</h1>
+      <div className="heading-underline" />
       <div className="carousel-parent position-relative">
         <div className="gallery">
           <span style={{ "--i": 1 }}>
