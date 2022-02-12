@@ -1,0 +1,54 @@
+.carousel-background {
+  background-color: #001120;
+}
+
+.carousel-parent {
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  margin-top: 130px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: gallery 20s linear infinite;
+}
+.gallery:hover {
+  animation-play-state: paused;
+}
+
+.gallery span {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--i) * 60deg)) translateZ(320px);
+}
+
+.caro-img {
+  height: 150px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.25));
+}
+
+.caro-img:hover {
+  cursor: pointer;
+  transition: all 1s;
+  transform: scale(1.5);
+}
+
+@keyframes gallery {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}

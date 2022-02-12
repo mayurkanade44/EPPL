@@ -15,6 +15,7 @@ import AboutExpandCard from "./AboutExpandCard";
 import Footer from "./Footer";
 import Journey from "./Journey";
 import Products from "./Products";
+import ProductsCarousal from "./ProductsCarousal";
 
 export {
   Navbar,
@@ -34,4 +35,5 @@ export {
   Footer,
   Journey,
   Products,
+  ProductsCarousal,
 };
