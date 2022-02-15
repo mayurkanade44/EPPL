@@ -1,5 +1,5 @@
 import React from "react";
-import { Products, ProductsCarousal } from "../components";
+import { Products} from "../components";
 
 const Product = () => {
   return (
@@ -7,7 +7,6 @@ const Product = () => {
       <h1 className="text-center mt-3">Products</h1>
       <div className="heading-underline" />
       <Products />
-      <ProductsCarousal />
     </div>
   );
 };

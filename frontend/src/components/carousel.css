@@ -33,11 +33,11 @@
 
 .caro-img {
   height: 150px;
-  -webkit-box-reflect: below 1px
+  -webkit-box-reflect: below 10px
     linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.25));
 }
 
-.caro-img:hover {
+.test:hover {
   cursor: pointer;
   transition: all 1s;
   transform: scale(1.5);

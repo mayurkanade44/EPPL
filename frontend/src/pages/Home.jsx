@@ -6,6 +6,7 @@ import {
   Loading,
   Client,
   Reviews,
+  ProductsCarousal,
 } from "../components";
 import { useDataContext } from "../context/data_context";
 import { clientsRTL, clientsLTR } from "../context/data";
@@ -17,8 +18,7 @@ export const Home = () => {
   useEffect(() => {
     const filtered = services.filter((service) => service.featured === true);
     setFeatured(filtered);
-  },[services]);
-
+  }, [services]);
 
   return (
     <>
@@ -27,7 +27,8 @@ export const Home = () => {
       ) : (
         <div>
           <Carousel />
-          <h1 className="text-center mt-4">Services</h1>
+          <h1 className="text-center mt-4">Our Services</h1>
+          <div className="heading-underline" />
           {featured &&
             featured.map((service, index) => {
               const { id, name, img, description } = service;
@@ -43,6 +44,7 @@ export const Home = () => {
                 </div>
               );
             })}
+          <ProductsCarousal />
           <Counter />
           <div className="bg-secondary">
             <Client data={clientsRTL} rtl={false} />
