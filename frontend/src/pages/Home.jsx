@@ -6,7 +6,7 @@ import {
   Loading,
   Client,
   Reviews,
-  ProductsCarousal,
+  BusinessCarousel,
 } from "../components";
 import { useDataContext } from "../context/data_context";
 import { clientsRTL, clientsLTR } from "../context/data";
@@ -44,7 +44,7 @@ export const Home = () => {
                 </div>
               );
             })}
-          <ProductsCarousal />
+          <BusinessCarousel />
           <Counter />
           <div className="bg-secondary">
             <Client data={clientsRTL} rtl={false} />
