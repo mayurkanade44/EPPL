@@ -38,7 +38,7 @@ const Footer = () => {
                       to="/services/recYvly2pg9AJ2bRQ"
                       className="text-white"
                     >
-                      Services
+                      <span className="foo">Services</span>
                     </Link>
                   </p>
                   <p>
@@ -46,12 +46,12 @@ const Footer = () => {
                       to="/business/rec7gt3H8WfdbxTO8"
                       className="text-white"
                     >
-                      Business Solutions
+                      <span className="foo">Business Solutions</span>
                     </Link>
                   </p>
                   <p>
                     <Link className="text-white" to="/products">
-                      Products
+                      <span className="foo">Products</span>
                     </Link>
                   </p>
                 </div>

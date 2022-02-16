@@ -480,6 +480,6 @@ body {
   height: 60px;
 }
 
-.quick :hover {
-  color: black;
+.foo:hover {
+  color: #1ebba3;
 }
