@@ -9,7 +9,7 @@ const intialState = {
   services: [],
   singleService: {},
   business: [],
-  singleBusiness: {}
+  singleBusiness: {},
 };
 
 export const DataProvider = ({ children }) => {
@@ -55,14 +55,31 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  const fetchSingleBusiness = async (id) => {
+    dispatch({ type: "LOADING" });
+    try {
+      const res = await axios.get(`${url}single_business?id=${id}`);
+      dispatch({
+        type: "SINGLE_BUSINESS_SUCCESS",
+        payload: res.data.fields,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     fetchServices();
-    fetchBusiness()
+    fetchBusiness();
     // eslint-disable-next-line
   }, []);
 
   return (
-    <DataContext.Provider value={{ ...state, fetchSingleService }}>{children}</DataContext.Provider>
+    <DataContext.Provider
+      value={{ ...state, fetchSingleService, fetchSingleBusiness }}
+    >
+      {children}
+    </DataContext.Provider>
   );
 };
 

@@ -59,7 +59,7 @@ export const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link to="/business" className="nav-link">
+                <Link to="/business/rec7gt3H8WfdbxTO8" className="nav-link">
                   <h5>Our Business Solutions</h5>
                 </Link>
               </li>

@@ -1,11 +1,12 @@
 import React from "react";
-import { BusinessNavbar } from "../components";
+
+import { BusinessNavbar, SingleBusiness } from "../components";
 
 const Business = () => {
   return (
     <div className="container">
-      <h2>Business</h2>
       <BusinessNavbar />
+      <SingleBusiness />
     </div>
   );
 };

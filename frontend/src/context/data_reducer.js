@@ -27,6 +27,13 @@ const data_reducer = (state, action) => {
         business: action.payload,
       };
     }
+    case "SINGLE_BUSINESS_SUCCESS": {
+      return {
+        ...state,
+        loading: false,
+        singleBusiness: action.payload
+      };
+    }
     default:
       throw new Error(`No Matching "${action.type}" - action type`);
   }

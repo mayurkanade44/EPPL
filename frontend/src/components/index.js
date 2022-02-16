@@ -16,6 +16,9 @@ import Footer from "./Footer";
 import Journey from "./Journey";
 import Products from "./Products";
 import BusinessCarousel from "./BusinessCarousel";
+import SingleBusiness from "./SingleBusiness";
+import VerticalCarousel from "./VerticalCarousel";
+
 
 export {
   Navbar,
@@ -36,4 +39,6 @@ export {
   Journey,
   Products,
   BusinessCarousel,
+  SingleBusiness,
+  VerticalCarousel,
 };

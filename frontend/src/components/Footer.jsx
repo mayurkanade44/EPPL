@@ -42,12 +42,15 @@ const Footer = () => {
                     </Link>
                   </p>
                   <p>
-                    <Link to="/business" className="text-white">
+                    <Link
+                      to="/business/rec7gt3H8WfdbxTO8"
+                      className="text-white"
+                    >
                       Business Solutions
                     </Link>
                   </p>
                   <p>
-                    <Link className="text-white" to="/">
+                    <Link className="text-white" to="/products">
                       Products
                     </Link>
                   </p>

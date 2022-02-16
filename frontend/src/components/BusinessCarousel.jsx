@@ -15,7 +15,7 @@ const BusinessCarousel = () => {
             return (
               <span style={{ "--i": index }} key={item.id}>
                 <div className="test">
-                  <Link to="/business">
+                  <Link to={`/business/${item.id}`}>
                     <img className="caro-img" src={item.img} alt="" />
                     <h5 className="text-center">{item.name}</h5>
                   </Link>
@@ -23,22 +23,6 @@ const BusinessCarousel = () => {
               </span>
             );
           })}
-
-          {/* <span style={{ "--i": 2 }}>
-            <img className="caro-img" src={p2} alt="" />
-          </span>
-          <span style={{ "--i": 3 }}>
-            <img className="caro-img" src={p3} alt="" />
-          </span>
-          <span style={{ "--i": 4 }}>
-            <img className="caro-img" src={p4} alt="" />
-          </span>
-          <span style={{ "--i": 5 }}>
-            <img className="caro-img" src={p5} alt="" />
-          </span>
-          <span style={{ "--i": 6 }}>
-            <img className="caro-img" src={p6} alt="" />
-          </span> */}
         </div>
       </div>
     </div>

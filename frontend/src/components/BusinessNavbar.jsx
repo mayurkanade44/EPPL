@@ -13,7 +13,7 @@ const BusinessNavbar = () => {
             <li className="nav-item" key={business.id}>
               <Link
                 className={`nav-link ${id === business.id && "active"}`}
-                to={`/services/${business.id}`}
+                to={`/business/${business.id}`}
               >
                 <div className="d-flex justify-content-center">
                   <img
