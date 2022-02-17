@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-    <div className="page">
+    <div className="error-page">
       <section className="position-absolute top-50 start-50 translate-middle">
         <h1 className="text-center">404</h1>
         <h3>

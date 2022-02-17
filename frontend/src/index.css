@@ -259,7 +259,7 @@ body {
 /*============ Our Journey ============*/
 
 .page-section {
-  padding: 0 6rem 0;
+  padding: 0 0 4rem 0;
 }
 
 .page-section h2.section-heading,
@@ -585,4 +585,8 @@ body {
 
 .service-home-img {
   box-shadow: 10px 10px 5px lightblue;
+}
+
+.error-page {
+  height: 70vh;
 }
