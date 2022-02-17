@@ -1,10 +1,11 @@
 import React from "react";
-import { FAQ, AboutExpandCard, Journey } from "../components";
+import { FAQ, AboutExpandCard, Journey, AboutHero } from "../components";
 import { faq } from "../context/data";
 
 export const About = () => {
   return (
     <div>
+      <AboutHero />
       <Journey />
       <div className="py-3" style={{ backgroundColor: "#f4f7fa" }}>
         <h1 className="text-center text-dark">

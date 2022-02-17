@@ -19,7 +19,7 @@ import BusinessCarousel from "./BusinessCarousel";
 import SingleBusiness from "./SingleBusiness";
 import VerticalCarousel from "./VerticalCarousel";
 import ProductsList from "./ProductsList";
-
+import AboutHero from "./AboutHero";
 
 export {
   Navbar,
@@ -43,4 +43,5 @@ export {
   SingleBusiness,
   VerticalCarousel,
   ProductsList,
+  AboutHero,
 };

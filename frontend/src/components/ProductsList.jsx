@@ -45,7 +45,9 @@ const ProductsList = () => {
         </div>
         <div
           className={`col-lg-4 col-md-6  ${
-            animi ? "animate__animated animate__fadeInUp product-animi" : null
+            animi
+              ? "animate__animated animate__fadeInUp animate__delay-1s"
+              : null
           }`}
         >
           <div className="product-item rounded overflow-hidden">
@@ -68,7 +70,9 @@ const ProductsList = () => {
         </div>
         <div
           className={`col-lg-4 col-md-6 ${
-            animi ? "animate__animated animate__fadeInUp" : null
+            animi
+              ? "animate__animated animate__fadeInUp animate__delay-2s"
+              : null
           }`}
         >
           <div className="product-item rounded overflow-hidden">
