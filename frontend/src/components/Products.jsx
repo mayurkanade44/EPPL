@@ -41,9 +41,9 @@ const Products = () => {
                 href=""
               >
                 <img className="img-fluid" src={img3} alt="" />
-                <div class="bg-white text-center position-absolute bottom-0 end-0 py-1 px-1">
-                  <h5 class="m-0">Rodein Box</h5>
-                  <small class="text-primary">200 ₹</small>
+                <div className="bg-white text-center position-absolute bottom-0 end-0 py-1 px-1">
+                  <h5 className="m-0">Rodein Box</h5>
+                  <small className="text-primary">200 ₹</small>
                 </div>
               </a>
             </div>
@@ -54,11 +54,11 @@ const Products = () => {
           style={{ minHeight: 350 }}
         >
           <a
-            class="position-relative d-block h-100 overflow-hidden border border-dark border-2 rounded"
+            className="position-relative d-block h-100 overflow-hidden border border-dark border-2 rounded"
             href=""
           >
             <img
-              class="img-fluid position-absolute w-100 h-100"
+              className="img-fluid position-absolute w-100 h-100"
               src={img4}
               alt=""
               style={{ objectFit: "cover" }}

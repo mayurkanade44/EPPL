@@ -21,7 +21,6 @@ const ServiceHome = ({ index, id, name, image, description }) => {
         x: "-100vw",
       });
     }
-    console.log(index % 2);
     // eslint-disable-next-line
   }, [inView]);
 
@@ -33,7 +32,7 @@ const ServiceHome = ({ index, id, name, image, description }) => {
           <div className="row">
             <div className="col-md-4">
               <Link to={`/services/${id}`}>
-                <div className="card" style={{ width: 300 }}>
+                <div className="card service-home-img" style={{ width: 300 }}>
                   <img src={image} className="card-img-top" alt={name} />
                 </div>
               </Link>

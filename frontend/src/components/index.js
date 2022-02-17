@@ -18,6 +18,7 @@ import Products from "./Products";
 import BusinessCarousel from "./BusinessCarousel";
 import SingleBusiness from "./SingleBusiness";
 import VerticalCarousel from "./VerticalCarousel";
+import ProductsList from "./ProductsList";
 
 
 export {
@@ -41,4 +42,5 @@ export {
   BusinessCarousel,
   SingleBusiness,
   VerticalCarousel,
+  ProductsList,
 };

@@ -483,3 +483,35 @@ body {
 .foo:hover {
   color: #1ebba3;
 }
+
+/*============ Products List ============*/
+
+.product-item {
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.45);
+}
+
+.product-item img {
+  transition: 0.5s;
+}
+
+.product-item:hover img {
+  transform: scale(1.1);
+}
+
+.product-item .border-top {
+  border-top: 1px dashed rgba(0, 185, 142, 0.3) !important;
+}
+
+.product-item .border-end {
+  border-right: 1px dashed rgba(0, 185, 142, 0.3) !important;
+}
+
+.product-animi {
+  --animate-delay: 5s;
+}
+
+/*============ Extra ============*/
+
+.service-home-img {
+  box-shadow: 10px 10px 5px lightblue;
+}
