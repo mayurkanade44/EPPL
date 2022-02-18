@@ -1,9 +1,9 @@
 import React from "react";
-import "./BusinessCarousel.css";
+import "./BusinessAnimation.css";
 import { Link } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
 
-const BusinessCarousel = () => {
+const BusinessAnimation = () => {
   const { business } = useDataContext();
   return (
     <div className="carousel-background">
@@ -29,4 +29,4 @@ const BusinessCarousel = () => {
   );
 };
 
-export default BusinessCarousel;
+export default BusinessAnimation;
