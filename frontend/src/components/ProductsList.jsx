@@ -22,7 +22,9 @@ const ProductsList = () => {
       <div className="row g-4" ref={ref}>
         <div
           className={`col-lg-4 col-md-6 ${
-            animi ? "animate__animated animate__fadeInUp" : null
+            animi
+              ? "animate__animated animate__fadeInUp"
+              : null
           }`}
         >
           <div className="product-item rounded overflow-hidden">

@@ -13,9 +13,10 @@ const HowWeDo = () => {
           <div className="col-12">
             <h2 className="section-title">We Are Specialists In</h2>
             <h3 className="section-sub-title">How We Do It</h3>
+            <div className="heading-underline" />
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-2">
           <div className="col-lg-4">
             <div className="ts-service-box d-flex">
               <img src={assess} alt="service-icon" className="service" />

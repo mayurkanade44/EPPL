@@ -1,5 +1,6 @@
 import React from "react";
 import fb from "../images/facebook.png";
+import last from "../images/50.png";
 
 const Journey = () => {
   return (
@@ -80,8 +81,8 @@ const Journey = () => {
           <li className="timeline-inverted">
             <div className="timeline-image">
               <img
-                className="rounded-circle img-fluid"
-                src="assets/img/about/4.jpg"
+                className="rounded-circle img-fluid pt-4"
+                src={last}
                 alt="..."
               />
             </div>
