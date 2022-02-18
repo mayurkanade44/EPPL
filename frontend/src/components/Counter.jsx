@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { upcounter } from "../context/data";
 
 
 const Counter = () => {
-  const { ref, inView } = useInView();
 
-  const updateCount = (start, end) => {};
 
   return (
     <div className="bg-dark">

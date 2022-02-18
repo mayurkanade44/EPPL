@@ -2,9 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { carousel } from "../context/data";
-import "animate.css";
 
-export const Carousel = ({ }) => {
+export const Carousel = () => {
   const settings = {
     infinite: true,
     speed: 500,

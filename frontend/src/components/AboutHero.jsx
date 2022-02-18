@@ -1,28 +1,53 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 const AboutHero = () => {
   return (
-    <div className="header">
-      <div className="ocean">
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6">
-            <div className="text-">
-              <h1 className="h1-large">
-                Lorem ipsum dolor sit amet consecte tura dipiscing elit sedo
-              </h1>
-              <p className="p-large">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, seddo
-                eiusmod tempor incididunt ut labore et male
-              </p>
+    <>
+      <div className="header">
+        <div className="ocean">
+          <div className="wave"></div>
+          <div className="wave"></div>
+        </div>
+        <div className="container">
+          <div className="text-center">
+            <div className="company-title">
+              Express Pesticides Private Limited
             </div>
+            <span className="typewriter">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Subsidiary Of EPCORN",
+                    "Established in 1972",
+                    "Happy Customers From Last 50 Years",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  pauseFor: 2000,
+                }}
+              />
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Subsidiary Of EPCORN")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString("Established in 1972")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString("Happy Customers From Last 50 Years")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString("Welcome You!!")
+                    .start();
+                }}
+              />
+            </span>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
