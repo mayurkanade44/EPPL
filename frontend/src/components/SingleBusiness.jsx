@@ -3,12 +3,10 @@ import { useDataContext } from "../context/data_context";
 import { useParams } from "react-router-dom";
 import { Loading, VerticalCarousel } from ".";
 
-
 const SingleBusiness = () => {
   const { loading, singleBusiness, fetchSingleBusiness } = useDataContext();
   const { id } = useParams();
   const { name, descriptions, carousel_img } = singleBusiness;
-  console.log(singleBusiness);
 
   useEffect(() => {
     fetchSingleBusiness(id);

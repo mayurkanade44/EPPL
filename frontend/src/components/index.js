@@ -19,6 +19,7 @@ import AboutHero from "./AboutHero";
 import BusinessAnimation from "./BusinessAnimation";
 import Awards from "./Awards";
 import SubNavbar from "./SubNavbar";
+import HowWeDo from "./HowWeDo";
 
 export {
   Navbar,
@@ -42,4 +43,5 @@ export {
   AboutHero,
   Awards,
   SubNavbar,
+  HowWeDo,
 };

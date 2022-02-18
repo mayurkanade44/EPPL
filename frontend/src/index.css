@@ -581,6 +581,38 @@ body {
   }
 }
 
+/*============ How We Do ============*/
+
+.section-title {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  font-weight: 300;
+  color: grey;
+}
+
+.section-sub-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 0 50px;
+}
+
+.ts-service-box {
+  margin-bottom: 10px;
+}
+
+.ts-service-box .service {
+  height: 100px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.service-box-title {
+  color: black;
+  font-weight: 600;
+}
+
 /*============ Extra ============*/
 
 .service-home-img {
