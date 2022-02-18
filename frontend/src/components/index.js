@@ -4,44 +4,42 @@ import Counter from "./Counter";
 import { Loading } from "./Loading";
 import { Navbar } from "./Navbar";
 import ServiceHome from "./ServiceHome";
-import ServiceNavbar from "./ServiceNavbar";
 import SingleService from "./SingleService";
-import TestAnmi from "./TestAnmi";
 import Reviews from "./Reviews";
-import BusinessNavbar from "./BusinessNavbar";
 import ServiceCarousel from "./ServiceCarousel";
 import FAQ from "./FAQ";
 import AboutExpandCard from "./AboutExpandCard";
 import Footer from "./Footer";
 import Journey from "./Journey";
 import Products from "./Products";
-import BusinessCarousel from "./BusinessCarousel";
 import SingleBusiness from "./SingleBusiness";
 import VerticalCarousel from "./VerticalCarousel";
 import ProductsList from "./ProductsList";
 import AboutHero from "./AboutHero";
+import BusinessAnimation from "./BusinessAnimation";
+import Awards from "./Awards";
+import SubNavbar from "./SubNavbar";
 
 export {
   Navbar,
   Carousel,
-  ServiceNavbar,
   ServiceHome,
-  TestAnmi,
   SingleService,
   Counter,
   Loading,
   Client,
   Reviews,
-  BusinessNavbar,
   ServiceCarousel,
   FAQ,
   AboutExpandCard,
   Footer,
   Journey,
   Products,
-  BusinessCarousel,
+  BusinessAnimation,
   SingleBusiness,
   VerticalCarousel,
   ProductsList,
   AboutHero,
+  Awards,
+  SubNavbar,
 };

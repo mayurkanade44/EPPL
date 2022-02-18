@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
-import { Loading, ServiceCarousel } from "../components";
+import { Loading, ServiceCarousel } from ".";
 import point from "../images/point.gif";
 
 const SingleService = () => {
   const [points, setPoints] = useState([]);
-  const { fetchSingleService, singleService, loading, services } =
-    useDataContext();
+  const { fetchSingleService, singleService, loading } = useDataContext();
   const { name, description, featured_img, treatment, features, carousel_img } =
     singleService;
 

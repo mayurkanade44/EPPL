@@ -1,10 +1,12 @@
 import React from "react";
-import { ServiceNavbar, SingleService } from "../components";
+import { SingleService, SubNavbar } from "../components";
+import { useDataContext } from "../context/data_context";
 
 export const Services = () => {
+  const { services } = useDataContext();
   return (
     <div>
-      <ServiceNavbar />
+      <SubNavbar data={services} name='services' />
       <SingleService />
     </div>
   );

@@ -1,11 +1,12 @@
 import React from "react";
-
-import { BusinessNavbar, SingleBusiness } from "../components";
+import { useDataContext } from "../context/data_context";
+import { SingleBusiness, SubNavbar } from "../components";
 
 const Business = () => {
+  const {business} = useDataContext()
   return (
     <div className="container">
-      <BusinessNavbar />
+      <SubNavbar data={business} name="business" />
       <SingleBusiness />
     </div>
   );
