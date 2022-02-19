@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const VerticalCarousel = ({ images = [{ url: "" }] }) => {
   const settings = {
-    dots: true,
     infinite: true,
     autoplay: true,
     slidesToShow: 1,

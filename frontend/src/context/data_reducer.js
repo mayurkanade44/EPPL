@@ -27,11 +27,18 @@ const data_reducer = (state, action) => {
         business: action.payload,
       };
     }
+    case "CASESTUDY_SUCCESS": {
+      return {
+        ...state,
+        loading: false,
+        caseStudy: action.payload,
+      };
+    }
     case "SINGLE_BUSINESS_SUCCESS": {
       return {
         ...state,
         loading: false,
-        singleBusiness: action.payload
+        singleBusiness: action.payload,
       };
     }
     default:

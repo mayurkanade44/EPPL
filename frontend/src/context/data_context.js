@@ -10,6 +10,7 @@ const intialState = {
   singleService: {},
   business: [],
   singleBusiness: {},
+  caseStudy:[]
 };
 
 export const DataProvider = ({ children }) => {
@@ -68,11 +69,22 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  const fetchCaseStudy = async () => {
+    try {
+      const res = await axios.get(`${url}casestudy`);
+      dispatch({ type: "CASESTUDY_SUCCESS", payload: res.data });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   useEffect(() => {
     fetchServices();
     fetchBusiness();
+    fetchCaseStudy()
     // eslint-disable-next-line
   }, []);
+
 
   return (
     <DataContext.Provider

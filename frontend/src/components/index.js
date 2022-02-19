@@ -20,6 +20,7 @@ import BusinessAnimation from "./BusinessAnimation";
 import Awards from "./Awards";
 import SubNavbar from "./SubNavbar";
 import HowWeDo from "./HowWeDo";
+import CaseStudyCard from "./CaseStudyCard";
 
 export {
   Navbar,
@@ -44,4 +45,5 @@ export {
   Awards,
   SubNavbar,
   HowWeDo,
+  CaseStudyCard,
 };

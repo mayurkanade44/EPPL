@@ -6,7 +6,6 @@ import { useDataContext } from "../context/data_context";
 const BusinessAnimation = () => {
   const { business } = useDataContext();
   const [featured, setFeatured] = useState([]);
-  console.log(business);
 
   useEffect(() => {
     const filtered = business.filter((service) => service.featured === true);

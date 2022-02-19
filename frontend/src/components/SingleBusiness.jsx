@@ -1,17 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDataContext } from "../context/data_context";
 import { useParams } from "react-router-dom";
-import { Loading, VerticalCarousel } from ".";
+import { Loading, VerticalCarousel, CaseStudyCard } from ".";
 
 const SingleBusiness = () => {
-  const { loading, singleBusiness, fetchSingleBusiness } = useDataContext();
+  const [caseStudies, setCaseStudies] = useState([]);
+  const { loading, singleBusiness, fetchSingleBusiness, caseStudy } =
+    useDataContext();
   const { id } = useParams();
-  const { name, descriptions, carousel_img } = singleBusiness;
+  const { name, descriptions, carousel_img, cs_name, cs_description } =
+    singleBusiness;
+
+  const fetchCases = async (id) => {
+    const temp = await caseStudy.filter((m) => m.business[0] === id);
+    setCaseStudies(temp);
+  };
 
   useEffect(() => {
     fetchSingleBusiness(id);
+    fetchCases(id);
     // eslint-disable-next-line
   }, [id]);
+  console.log(caseStudies);
 
   return (
     <div>
@@ -26,6 +36,9 @@ const SingleBusiness = () => {
               <VerticalCarousel images={carousel_img} />
             </div>
             <div className="col-md-8">{descriptions}</div>
+            <div className="col-md-12">
+              <CaseStudyCard data={caseStudies}/>
+            </div>
           </div>
         </>
       )}

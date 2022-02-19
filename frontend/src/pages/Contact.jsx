@@ -177,7 +177,7 @@ export const Contact = () => {
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15081.881561274857!2d72.8365923!3d19.0870093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fb4ff8636b324f6!2sExpress%20Pesticides%20Private%20Limited!5e0!3m2!1sen!2sin!4v1642483456355!5m2!1sen!2sin"
                     title="map"
                     style={{ border: 0 }}
-                    allowfullscreen
+                    
                     loading="lazy"
                   ></iframe>
                 </div>
