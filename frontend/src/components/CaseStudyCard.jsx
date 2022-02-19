@@ -28,6 +28,17 @@ const CaseStudyCard = ({ data }) => {
                         <div className="card-body">
                           <h5 className="card-title mb-2">{item.name}</h5>
                           <p className="card-text mb-4">{item.descriptions}</p>
+                          <button className="btn btn-dark">
+                            <a
+                              style={{
+                                textDecoration: "none",
+                                color: "white",
+                              }}
+                              href={item.file}
+                            >
+                              Download
+                            </a>
+                          </button>
                         </div>
                       </div>
                     </div>

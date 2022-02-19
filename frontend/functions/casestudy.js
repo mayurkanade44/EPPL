@@ -10,14 +10,16 @@ exports.handler = async (event, context) => {
     const { records } = await airtable.list({ maxRecords: 200 });
     const services = records.map((service) => {
       const { id } = service;
-      const { name, descriptions, business, featured_img } = service.fields;
+      const { name, descriptions, business, featured_img, files } = service.fields;
       const img = featured_img[0].url;
+      const file = files[0].url
       return {
         id,
         name,
         descriptions,
         business,
         img,
+        file
       };
     });
     return {

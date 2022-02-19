@@ -21,7 +21,6 @@ const SingleBusiness = () => {
     fetchCases(id);
     // eslint-disable-next-line
   }, [id]);
-  console.log(caseStudies);
 
   return (
     <div>
@@ -37,7 +36,7 @@ const SingleBusiness = () => {
             </div>
             <div className="col-md-8">{descriptions}</div>
             <div className="col-md-12">
-              <CaseStudyCard data={caseStudies}/>
+              <CaseStudyCard data={caseStudies} />
             </div>
           </div>
         </>
