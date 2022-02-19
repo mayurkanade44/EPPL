@@ -43,7 +43,7 @@ const Footer = () => {
                   </p>
                   <p>
                     <Link
-                      to="/business/rechgwvJBsuEKmaU1"
+                      to="/business/recCjq0CzUMSEBlHH"
                       className="text-white"
                     >
                       <span className="foo">Business Solutions</span>
