@@ -10,6 +10,13 @@ import apollo from "../images/apollo.png";
 import puma from "../images/puma.png";
 import tata from "../images/tata.png";
 import cbre from "../images/cbre.png";
+import pidi from "../images/pidilite.png";
+import lt from "../images/lt.png";
+import hyatt from "../images/hyatt.png";
+import big from "../images/big.png";
+import jio from "../images/jio.png";
+import mcd from "../images/mcd.png";
+import country from "../images/country.png";
 
 // reviews images
 import man from "../images/man.png";
@@ -119,44 +126,56 @@ export const clientsRTL = [
     id: 1,
     name: "Lodha",
     years: ">10",
-    col: "#D47AE8",
+    col: "#548CFF",
   },
   {
     id: 2,
     name: "Piramal",
     years: ">5",
-    col: "#7CD1B8",
+    col: "#95CD41",
   },
   {
     id: 3,
     name: "Apollo",
     years: ">20",
-    col: "#FE7E6D",
+    col: "#FF7BA9",
+  },
+  {
+    id: 8,
+    name: "Rane & Co",
+    years: ">10",
+    col: "#548CFF",
   },
   {
     id: 4,
     name: "Puma",
     years: "<5",
-    col: "#7CD1B8",
+    col: "#95CD41",
   },
   {
     id: 5,
     name: "Tata",
     years: ">10",
-    col: "#D47AE8",
+    col: "#548CFF",
   },
   {
     id: 6,
     name: "Macdonald",
     years: ">5",
-    col: "#7CD1B8",
+    col: "#95CD41",
+  },
+  {
+    id: 7,
+    name: "Sodexo",
+    years: ">10",
+    col: "#548CFF",
   },
 ];
 
 export const clientsLTR = [
   {
     id: 1,
-    logo: apollo,
+    logo: jio,
   },
   {
     id: 2,
@@ -177,6 +196,30 @@ export const clientsLTR = [
   {
     id: 6,
     logo: lodha,
+  },
+  {
+    id: 7,
+    logo: pidi,
+  },
+  {
+    id: 8,
+    logo: big,
+  },
+  {
+    id: 9,
+    logo: mcd,
+  },
+  {
+    id: 10,
+    logo: country,
+  },
+  {
+    id: 11,
+    logo: hyatt,
+  },
+  {
+    id: 12,
+    logo: lt,
   },
 ];
 

@@ -58,7 +58,6 @@ const Footer = () => {
 
                 <hr className="w-100 clearfix d-md-none" />
 
-                <hr className="w-100 clearfix d-md-none" />
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h4 className=" mb-4 font-weight-bold">Contact</h4>
                   <p>

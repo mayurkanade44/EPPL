@@ -42,7 +42,7 @@ const Client = ({ data, rtl }) => {
               <div key={id} className="my-4">
                 <h2
                   className="d-inline"
-                  style={{ fontFamily: "fantasy", color: "blueviolet" }}
+                  style={{ fontFamily: "fantasy", color: "black" }}
                 >{`${name}`}</h2>
                 <h4
                   className="d-inline"
