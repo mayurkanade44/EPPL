@@ -18,29 +18,13 @@ const AboutHero = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Subsidiary Of EPCORN",
+                    "Powered By EPCORN",
                     "Established in 1972",
                     "Happy Customers From Last 50 Years",
                   ],
                   autoStart: true,
                   loop: true,
                   pauseFor: 2000,
-                }}
-              />
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("Subsidiary Of EPCORN")
-                    .pauseFor(2000)
-                    .deleteAll()
-                    .typeString("Established in 1972")
-                    .pauseFor(2000)
-                    .deleteAll()
-                    .typeString("Happy Customers From Last 50 Years")
-                    .pauseFor(2000)
-                    .deleteAll()
-                    .typeString("Welcome You!!")
-                    .start();
                 }}
               />
             </span>

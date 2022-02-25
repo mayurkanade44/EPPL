@@ -17,9 +17,7 @@ const FAQ = ({ data }) => {
               <div className="faq-container">
                 <div className={showInfo ? "faq active" : "faq"}>
                   <h5 className="faq-title ">{d.ques}</h5>
-
                   <p className="faq-text">{d.ans}</p>
-
                   <button className="faq-toggle" onClick={toggleClass}>
                     <FontAwesomeIcon icon={faArrowDown} size="lg" />
                   </button>
