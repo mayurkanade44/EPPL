@@ -229,6 +229,7 @@ body {
   right: 30px;
   height: 30px;
   width: 30px;
+  color: black;
 }
 
 .faq-toggle:focus {
@@ -634,6 +635,8 @@ body {
   height: 70vh;
 }
 
+/*============ Case Studies ============*/
+
 .card-flip {
   perspective: 1000px;
 }
@@ -697,3 +700,79 @@ body {
   border: black solid;
 }
 
+/*============ Awards ============*/
+.project-img-container {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  
+}
+
+.project-img-container img {
+  -webkit-transform: perspective(1px) scale3d(1.1, 1.1, 1);
+  transform: perspective(1px) scale3d(1.1, 1.1, 1);
+  transition: all 400ms;
+}
+
+.project-img-container:hover img {
+  -webkit-transform: perspective(1px) scale3d(1.15, 1.15, 1);
+  transform: perspective(1px) scale3d(1.15, 1.15, 1);
+}
+
+.project-img-container:after {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 400ms;
+}
+
+.project-img-container:hover:after {
+  opacity: 1;
+}
+
+.project-item-info {
+  position: absolute;
+  top: 50%;
+  margin-top: -10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+  z-index: 1;
+}
+
+.project-item-info-content {
+  opacity: 0;
+  -webkit-transform: perspective(1px) translate3d(0, 15px, 0);
+  transform: perspective(1px) translate3d(0, 15px, 0);
+  transition: all 400ms;
+}
+
+.project-item-info-content .project-item-title {
+  font-size: 25px;
+}
+
+/* .project-item-info-content .project-item-title a {
+  color: #fff;
+} */
+
+.project-item-info-content .project-item-title:hover {
+  color: #ffb600;
+  cursor: pointer;
+}
+
+.project-img-container:hover .project-item-info-content {
+  opacity: 1;
+  -webkit-transform: perspective(1px) translate3d(0, 0, 0);
+  transform: perspective(1px) translate3d(0, 0, 0);
+}
+
+.modal-content {
+  width: 300px;
+}

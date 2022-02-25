@@ -21,6 +21,7 @@ import Awards from "./Awards";
 import SubNavbar from "./SubNavbar";
 import HowWeDo from "./HowWeDo";
 import CaseStudyCard from "./CaseStudyCard";
+import SingleProduct from "./SingleProduct";
 
 export {
   Navbar,
@@ -46,4 +47,5 @@ export {
   SubNavbar,
   HowWeDo,
   CaseStudyCard,
+  SingleProduct,
 };
