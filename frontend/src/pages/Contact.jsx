@@ -8,7 +8,7 @@ import building from "../images/building.gif";
 
 export const Contact = () => {
   return (
-    <div className="content">
+    <div className="content mt-3">
       <h2 className="text-center mb-4">
         <u>Let's Talk</u>
       </h2>
@@ -119,8 +119,9 @@ export const Contact = () => {
                     </div>
                     <div className="text ps-3">
                       <p>
-                        <span className="pt-5">Address: </span>Khira Industries,
-                        Santacruz
+                        <span className="pt-5">Address: </span>S - 5, 2nd Floor,
+                        Khira Industrial Estate, VM Bhargav Road, Santacruz
+                        West. Mumbai - 400054.
                       </p>
                     </div>
                   </div>
@@ -177,7 +178,6 @@ export const Contact = () => {
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15081.881561274857!2d72.8365923!3d19.0870093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fb4ff8636b324f6!2sExpress%20Pesticides%20Private%20Limited!5e0!3m2!1sen!2sin!4v1642483456355!5m2!1sen!2sin"
                     title="map"
                     style={{ border: 0 }}
-                    
                     loading="lazy"
                   ></iframe>
                 </div>

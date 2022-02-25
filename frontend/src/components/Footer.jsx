@@ -50,8 +50,16 @@ const Footer = () => {
                     </Link>
                   </p>
                   <p>
-                    <Link className="text-white" to="/products">
+                    <Link
+                      className="text-white"
+                      to="/product/rec2SJs8R0mUOQHR6"
+                    >
                       <span className="foo">Products</span>
+                    </Link>
+                  </p>
+                  <p>
+                    <Link className="text-white" to="/contact">
+                      <span className="foo">Free Quote</span>
                     </Link>
                   </p>
                 </div>
@@ -60,10 +68,13 @@ const Footer = () => {
 
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <h4 className=" mb-4 font-weight-bold">Contact</h4>
-                  <p>
+                  <div className="pb-2">
                     <FontAwesomeIcon className="me-2" icon={faHome} />
-                    Santacruz West, Mumbai 400054
-                  </p>
+                    <span style={{ fontSize: 13 }}>
+                      S - 5, 2nd Floor, Khira Industrial Estate, VM Bhargav
+                      Road, Santacruz West. Mumbai - 400054.
+                    </span>
+                  </div>
                   <p>
                     <FontAwesomeIcon className="me-2" icon={faEnvelope} />
                     epcorn@yahoo.in

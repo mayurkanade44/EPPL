@@ -50,7 +50,8 @@ const HowWeDo = () => {
               loading="lazy"
               className="img-fluid"
               src={pestguy}
-              alt="petguy-avater"
+              style={{height:550}}
+              alt="pestguy-avater"
             />
           </div>
           <div className="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
