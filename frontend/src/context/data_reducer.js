@@ -20,6 +20,20 @@ const data_reducer = (state, action) => {
         singleService: action.payload,
       };
     }
+    case "PRODUCTS_SUCCESS": {
+      return {
+        ...state,
+        loading: false,
+        products: action.payload
+      }
+    }
+    case "PRODUCT_SUCCESS": {
+      return {
+        ...state,
+        loading: false,
+        singleProduct: action.payload
+      }
+    }
     case "BUSINESS_SUCCESS": {
       return {
         ...state,

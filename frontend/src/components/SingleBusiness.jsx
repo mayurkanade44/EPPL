@@ -8,13 +8,14 @@ const SingleBusiness = () => {
   const { loading, singleBusiness, fetchSingleBusiness, caseStudy } =
     useDataContext();
   const { id } = useParams();
-  const { name, descriptions, carousel_img, cs_name, cs_description } =
-    singleBusiness;
+  const { name, descriptions, carousel_img } = singleBusiness;
 
   const fetchCases = async (id) => {
     const temp = await caseStudy.filter((m) => m.business[0] === id);
     setCaseStudies(temp);
   };
+
+  console.log(singleBusiness);
 
   useEffect(() => {
     fetchSingleBusiness(id);

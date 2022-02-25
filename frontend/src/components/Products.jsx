@@ -4,8 +4,14 @@ import img4 from "../images/cat-4.jpg";
 import img2 from "../images/cat-2.jpg";
 import img3 from "../images/cat-3.jpg";
 import "animate.css";
+import { useDataContext } from "../context/data_context";
 
 const Products = () => {
+  const { products } = useDataContext();
+
+  const featured = products.filter((product) => product.featured);
+  const other = products.filter((product) => !product.featured);
+
   return (
     <div className="container category">
       <div className="row g-3">

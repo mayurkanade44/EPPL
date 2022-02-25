@@ -6,7 +6,6 @@ import projects from "../images/construction.png";
 // clients logo images
 import lodha from "../images/lodha.png";
 import birla from "../images/birla.png";
-import apollo from "../images/apollo.png";
 import puma from "../images/puma.png";
 import tata from "../images/tata.png";
 import cbre from "../images/cbre.png";
@@ -265,6 +264,29 @@ export const reviews = [
     designation: "VP",
     text: "Very Nice",
     image: man,
+  },
+];
+
+export const awards = [
+  {
+    id: 1,
+    name: "IPCA - Indian Pest Control Association",
+    img: fb,
+  },
+  {
+    id: 2,
+    name: "NPMA - National  Pest Management Association",
+    img: insta,
+  },
+  {
+    id: 3,
+    name: "Best Pest Award",
+    img: link,
+  },
+  {
+    id: 4,
+    name: "Safe Pest Control Award",
+    img: whatsapp,
   },
 ];
 

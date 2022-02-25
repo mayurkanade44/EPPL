@@ -10,7 +10,9 @@ const intialState = {
   singleService: {},
   business: [],
   singleBusiness: {},
-  caseStudy:[]
+  caseStudy: [],
+  products: [],
+  singleProduct: {},
 };
 
 export const DataProvider = ({ children }) => {
@@ -42,6 +44,32 @@ export const DataProvider = ({ children }) => {
       console.log(error);
     }
   };
+
+  const fetchProducts = async () => {
+    dispatch({ type: "LOADING" });
+    try {
+      const res = await axios.get(`${url}products`);
+      dispatch({
+        type: "PRODUCTS_SUCCESS",
+        payload: res.data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const fetchSingleProduct = async (id) => {
+    dispatch({ type: "LOADING" });
+    try {
+      const res = await axios.get(`${url}single_product?id=${id}`);
+      dispatch({
+        type: "PRODUCT_SUCCESS",
+        payload: res.data.fields,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   const fetchBusiness = async () => {
     dispatch({ type: "LOADING" });
@@ -76,19 +104,21 @@ export const DataProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   useEffect(() => {
     fetchServices();
     fetchBusiness();
-    fetchCaseStudy()
+    fetchProducts();
+    fetchCaseStudy();
     // eslint-disable-next-line
   }, []);
 
 
+
   return (
     <DataContext.Provider
-      value={{ ...state, fetchSingleService, fetchSingleBusiness }}
+      value={{ ...state, fetchSingleService, fetchSingleBusiness, fetchSingleProduct }}
     >
       {children}
     </DataContext.Provider>
