@@ -12,7 +12,7 @@ export const Navbar = () => {
           <Link to="/" className="d-flex navbar-brand nav-link">
             <img
               src={eppl}
-              style={{ height: 60, width: 220, marginRight: 10 }}
+              style={{ height: 50, width: 180, marginRight: 10 }}
               alt="logo"
             />
           </Link>
@@ -38,7 +38,7 @@ export const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <h5>Our Solutions</h5>
+                  <h6>Our Solutions</h6>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   {services.map((service) => {
@@ -60,27 +60,27 @@ export const Navbar = () => {
               </li>
               <li className="nav-item dropdown">
                 <Link to="/business/recCjq0CzUMSEBlHH" className="nav-link">
-                  <h5>Our Business Solutions</h5>
+                  <h6>Our Business Solutions</h6>
                 </Link>
               </li>
               <li className="nav-item ">
                 <Link to="/knowus" className="nav-link">
-                  <h5>Know Us</h5>
+                  <h6>Know Us</h6>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/products" className="nav-link">
-                  <h5>Products</h5>
+                  <h6>Products</h6>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
-                  <h5>Buzz</h5>
+                  <h6>Buzz</h6>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
-                  <h5>Contact</h5>
+                  <h6>Contact</h6>
                 </Link>
               </li>
             </ul>

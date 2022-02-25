@@ -4,7 +4,7 @@
   --bg: #3c465c;
   --primary: #78ffcd;
   --solid: #fff;
-  --btn-w: 8em;
+  --btn-w: 7.8em;
   --dot-w: calc(var(--btn-w) * 0.2);
   --tr-X: calc(var(--btn-w) - var(--dot-w));
 }
@@ -15,7 +15,7 @@
 body::before {
   display: block;
   content: "";
-  padding: 2.7rem 0;
+  padding: 2.5rem 0;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 .btn-quote {
   position: relative;
   margin: 0 auto;
-  width: 8.5em;
+  width: 8em;
   color: black;
   font-weight: bold;
   border: 0.15em solid black;
