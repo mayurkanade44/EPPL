@@ -4,7 +4,7 @@ import eppl from "../images/eppl1.png";
 import { useDataContext } from "../context/data_context";
 
 export const Navbar = () => {
-  const { services } = useDataContext();
+  const { services, products } = useDataContext();
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
@@ -68,11 +68,30 @@ export const Navbar = () => {
                   <h6>Know Us</h6>
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/products" className="nav-link">
+              <li className="nav-item dropdown">
+                <div
+                  className="nav-link"
+                >
                   <h6>Products</h6>
-                </Link>
+                </div>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {products.map((service) => {
+                    return (
+                      <li key={service.id}>
+                        <Link
+                          className="dropdown-item"
+                          to={`/product/${service.id}`}
+                        >
+                          <span>
+                            {service.name}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               </li>
+              
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
                   <h6>Buzz</h6>

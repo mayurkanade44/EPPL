@@ -35,7 +35,7 @@ const ProductsList = () => {
               <div className="product-item rounded overflow-hidden">
                 <div className="position-relative overflow-hidden">
                   <Link to={`/product/${item.id}`}>
-                    <img className="img-fluid" src={item.img} alt="" />
+                    <img className="img-fluid" src={item.img} style={{height:300}} alt="" />
                   </Link>
                   <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                     {`${item.name} / ${item.price}`}

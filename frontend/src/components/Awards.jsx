@@ -22,7 +22,7 @@ const Awards = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
                     >
-                      <h6 className="project-item-title text-center">
+                      <h6 className="project-item-title">
                         {award.name}
                       </h6>
                     </button>

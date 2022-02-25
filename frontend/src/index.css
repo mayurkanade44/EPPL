@@ -40,7 +40,7 @@ body {
 
 /*============ NAVABR ============*/
 
-.nav-link h5:hover {
+.nav-link h6:hover {
   color: black;
 }
 
@@ -635,6 +635,15 @@ body {
   height: 70vh;
 }
 
+.my-custom-scrollbar {
+  position: relative;
+  height: 300px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+
 /*============ Case Studies ============*/
 
 .card-flip {
@@ -704,7 +713,7 @@ body {
 .project-img-container {
   position: relative;
   overflow: hidden;
-  width: 300px;
+  width: 230px;
   
 }
 
@@ -755,12 +764,8 @@ body {
 }
 
 .project-item-info-content .project-item-title {
-  font-size: 25px;
+  font-size: 20px;
 }
-
-/* .project-item-info-content .project-item-title a {
-  color: #fff;
-} */
 
 .project-item-info-content .project-item-title:hover {
   color: #ffb600;

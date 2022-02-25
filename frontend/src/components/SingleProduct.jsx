@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDataContext } from "../context/data_context";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const SingleProduct = () => {
   const [points, setPoints] = useState([]);
@@ -8,6 +8,9 @@ const SingleProduct = () => {
   const { name, price, descriptions, featured_img, how_to_use, use_video } =
     singleProduct;
   const { id } = useParams();
+  const sort = products.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
 
   useEffect(() => {
     fetchSingleProduct(id);
@@ -16,22 +19,47 @@ const SingleProduct = () => {
       setPoints(temp);
     }
   }, [id, how_to_use]);
-  console.log(singleProduct);
+
   return (
     <div className="container">
-      <div className="row">
+      <div className="row my-4">
         <div className="col-md-3">
-          <h4>Product List</h4>
+          <div className="text-center">
+            <h4 className="my-5 ">Product List</h4>
+            <div className="table-wrapper-scroll-y my-custom-scrollbar">
+              <table className="table table-bordered table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Product Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sort.map((product) => {
+                    return (
+                      <tr key={product.id}>
+                        <Link
+                          to={`/product/${product.id}`}
+                          style={{ textDecoration: "none" }}
+                        >
+                          <td>{product.name}</td>
+                        </Link>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
         <div className="col-md-9">
-          <h2 className="text-center my-4">{name}</h2>
+          <h2 className="text-center">{name}</h2>
           <div className="row">
             <div className="col-md-6">
               {featured_img && (
                 <img
                   className="img-fluid"
                   src={featured_img[0].url}
-                  //   style={{ height: 100 }}
+                  style={{ height: 350, width: 400 }}
                   alt={name}
                 />
               )}
@@ -62,9 +90,7 @@ const SingleProduct = () => {
                   height="250"
                   src={use_video}
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
                 ></iframe>
               </div>
             </div>
