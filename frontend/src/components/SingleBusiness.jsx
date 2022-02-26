@@ -6,6 +6,7 @@ import {
   VerticalCarousel,
   CaseStudyCard,
   HorizontalCarousel,
+  DownloadFiles,
 } from ".";
 
 const SingleBusiness = () => {
@@ -13,7 +14,8 @@ const SingleBusiness = () => {
   const { loading, singleBusiness, fetchSingleBusiness, caseStudy } =
     useDataContext();
   const { id } = useParams();
-  const { name, descriptions, carousel_img, stats_img } = singleBusiness;
+  const { name, descriptions, carousel_img, stats_img, sop, similar_works } =
+    singleBusiness;
 
   const fetchCases = async (id) => {
     const temp = await caseStudy.filter((m) => m.business[0] === id);
@@ -44,6 +46,7 @@ const SingleBusiness = () => {
             <div className="col-md-12">
               <CaseStudyCard data={caseStudies} />
             </div>
+            <DownloadFiles sop={sop} works={similar_works} />
           </div>
         </>
       )}

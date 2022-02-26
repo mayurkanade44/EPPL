@@ -1,6 +1,7 @@
 import React from "react";
 
 const CaseStudyCard = ({ data }) => {
+  console.log(data);
   return (
     <div>
       <h1>Case Studies</h1>

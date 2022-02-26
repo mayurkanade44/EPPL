@@ -23,6 +23,7 @@ import HowWeDo from "./HowWeDo";
 import CaseStudyCard from "./CaseStudyCard";
 import SingleProduct from "./SingleProduct";
 import Horizontalimages from "./Horizontalimages";
+import DownloadFiles from "./DownloadFiles";
 
 export {
   Navbar,
@@ -49,5 +50,6 @@ export {
   HowWeDo,
   CaseStudyCard,
   SingleProduct,
-  Horizontalimages
+  Horizontalimages,
+  DownloadFiles
 };
