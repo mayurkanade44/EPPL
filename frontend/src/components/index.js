@@ -22,6 +22,7 @@ import SubNavbar from "./SubNavbar";
 import HowWeDo from "./HowWeDo";
 import CaseStudyCard from "./CaseStudyCard";
 import SingleProduct from "./SingleProduct";
+import Horizontalimages from "./Horizontalimages";
 
 export {
   Navbar,
@@ -48,4 +49,5 @@ export {
   HowWeDo,
   CaseStudyCard,
   SingleProduct,
+  Horizontalimages
 };

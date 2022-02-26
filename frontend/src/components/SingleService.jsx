@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
-import { Loading, HorizontalCarousel } from ".";
+import { Loading, HorizontalCarousel, Horizontalimages } from ".";
 import point from "../images/point.gif";
 
 const SingleService = () => {
   const [points, setPoints] = useState([]);
   const { fetchSingleService, singleService, loading } = useDataContext();
-  const { name, description, featured_img, treatment, features, carousel_img } =
+  const { name, description, featured_img, treatment, features, carousel_img, work_img } =
     singleService;
 
   const { id } = useParams();
@@ -59,6 +59,7 @@ const SingleService = () => {
               </div>
             </div>
           </div>
+          <Horizontalimages images={work_img} />
           <div>
             <h5>Treatment:</h5>
             <p>{treatment}</p>
