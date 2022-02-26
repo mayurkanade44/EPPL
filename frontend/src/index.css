@@ -639,10 +639,14 @@ body {
   position: relative;
   height: 300px;
   overflow: auto;
-  }
-  .table-wrapper-scroll-y {
+}
+.table-wrapper-scroll-y {
   display: block;
-  }
+}
+
+.work-img {
+  box-shadow: 8px 10px 8px #36454F;
+}
 
 /*============ Case Studies ============*/
 
@@ -714,7 +718,6 @@ body {
   position: relative;
   overflow: hidden;
   width: 230px;
-  
 }
 
 .project-img-container img {
