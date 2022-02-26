@@ -1,5 +1,4 @@
 import React from "react";
-import fb from "../images/facebook.png";
 import next from "../images/next.png";
 
 const Horizontalimages = ({ images = [{ url: "" }] }) => {
