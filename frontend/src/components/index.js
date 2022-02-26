@@ -6,7 +6,7 @@ import { Navbar } from "./Navbar";
 import ServiceHome from "./ServiceHome";
 import SingleService from "./SingleService";
 import Reviews from "./Reviews";
-import ServiceCarousel from "./ServiceCarousel";
+import HorizontalCarousel from "./HorizontalCarousel";
 import FAQ from "./FAQ";
 import AboutExpandCard from "./AboutExpandCard";
 import Footer from "./Footer";
@@ -32,7 +32,7 @@ export {
   Loading,
   Client,
   Reviews,
-  ServiceCarousel,
+  HorizontalCarousel,
   FAQ,
   AboutExpandCard,
   Footer,

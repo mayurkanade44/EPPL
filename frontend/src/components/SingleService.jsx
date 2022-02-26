@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
-import { Loading, ServiceCarousel } from ".";
+import { Loading, HorizontalCarousel } from ".";
 import point from "../images/point.gif";
 
 const SingleService = () => {
@@ -28,7 +28,7 @@ const SingleService = () => {
         <Loading />
       ) : (
         <>
-          <ServiceCarousel images={carousel_img} />
+          <HorizontalCarousel images={carousel_img} />
           <h1 className="text-center">{name}</h1>
           <div className="row">
             <div className="col-md-4">

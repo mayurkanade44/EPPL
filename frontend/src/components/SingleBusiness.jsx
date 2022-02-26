@@ -1,21 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useDataContext } from "../context/data_context";
 import { useParams } from "react-router-dom";
-import { Loading, VerticalCarousel, CaseStudyCard } from ".";
+import {
+  Loading,
+  VerticalCarousel,
+  CaseStudyCard,
+  HorizontalCarousel,
+} from ".";
 
 const SingleBusiness = () => {
   const [caseStudies, setCaseStudies] = useState([]);
   const { loading, singleBusiness, fetchSingleBusiness, caseStudy } =
     useDataContext();
   const { id } = useParams();
-  const { name, descriptions, carousel_img } = singleBusiness;
+  const { name, descriptions, carousel_img, stats_img } = singleBusiness;
 
   const fetchCases = async (id) => {
     const temp = await caseStudy.filter((m) => m.business[0] === id);
     setCaseStudies(temp);
+    console.log(caseStudy);
   };
-
-  console.log(singleBusiness);
 
   useEffect(() => {
     fetchSingleBusiness(id);
@@ -29,11 +33,12 @@ const SingleBusiness = () => {
         <Loading />
       ) : (
         <>
+          <HorizontalCarousel images={carousel_img} />
           <h1 className="text-center mt-2">{name}</h1>
           <div className="heading-underline" />
           <div className="row">
             <div className="col-md-4">
-              <VerticalCarousel images={carousel_img} />
+              <VerticalCarousel images={stats_img} />
             </div>
             <div className="col-md-8">{descriptions}</div>
             <div className="col-md-12">

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ServiceCarousel = ({ images = [{ url: "" }] }) => {
+const HorizontalCarousel = ({ images = [{ url: "" }] }) => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -34,4 +34,4 @@ const ServiceCarousel = ({ images = [{ url: "" }] }) => {
   );
 };
 
-export default ServiceCarousel;
+export default HorizontalCarousel;
