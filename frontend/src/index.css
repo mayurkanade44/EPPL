@@ -789,13 +789,6 @@ body {
   cursor: pointer;
 }
 
-.fab,
-.fa {
-  font-size: 30px;
-  color: black;
-  text-shadow: 0 0 10px white;
-}
-
 .sub-btns {
   height: 63px;
   width: 63px;
@@ -803,7 +796,7 @@ body {
   /*   bottom: 10px;
   right: 10px; */
   left: 95%;
-  top: 90%;
+  top: 129%;
   transform: translate(-50%, -50%);
 }
 
@@ -823,88 +816,58 @@ body {
 }
 
 .active-btn1 {
-  transform: translateX(-62px) rotate(1080deg);
-}
-.active-btn2 {
-  bottom: 60px;
-  transform: translateX(-124px) rotate(1080deg);
-}
-.active-btn3 {
-  bottom: 120px;
-  transform: translateX(-186px) rotate(1080deg);
-}
-.active-btn4 {
-  bottom: 180px;
-  transform: translateX(-248px) rotate(1080deg);
-}
-.active-btn5 {
   bottom: 240px;
   left: 5px;
   transform: translateY(-52px) rotate(1080deg);
 }
-.active-btn6 {
+.active-btn2 {
   bottom: 290px;
   left: 5px;
   transform: translateY(-104px) rotate(1080deg);
 }
-.active-btn7 {
+.active-btn3 {
   bottom: 340px;
   left: 5px;
   transform: translateY(-156px) rotate(1080deg);
 }
-.active-btn8 {
+.active-btn4 {
   bottom: 390px;
   left: 5px;
   transform: translateY(-208px) rotate(1080deg);
 }
-.active-btn9 {
+.active-btn5 {
   bottom: 440px;
   left: 5px;
   transform: translateY(-260px) rotate(1080deg);
 }
 
-.btn2 {
-  bottom: 60px;
-  transform: translateX(0);
-}
-
-.btn3 {
-  bottom: 120px;
-  transform: translateX(0);
-}
-
-.btn4 {
-  bottom: 180px;
-  transform: translateX(0);
-}
-
 .touch {
-  height: 50px !important;
-  width: 50px !important;
+  height: 40px !important;
+  width: 45px !important;
   font-family: "poppins";
 }
 
-.btn5 {
+.btn1 {
   bottom: 240px;
   transform: translateY(0);
 }
 
-.btn6 {
+.btn2 {
   bottom: 300px;
   transform: translateY(0);
 }
 
-.btn7 {
+.btn3 {
   bottom: 360px;
   transform: translateY(0);
 }
 
-.btn8 {
+.btn4 {
   bottom: 420px;
   transform: translateY(0);
 }
 
-.btn9 {
+.btn5 {
   bottom: 480px;
   transform: translateY(0);
 }

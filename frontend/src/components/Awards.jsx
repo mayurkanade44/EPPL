@@ -1,5 +1,4 @@
 import React from "react";
-import { awards } from "../context/data";
 import fb from "../images/facebook.png";
 import what from "../images/whatsapp.png";
 import insta from "../images/instagram.png";
