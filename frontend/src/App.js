@@ -8,7 +8,7 @@ import {
   Business,
   Product,
 } from "./pages";
-import { Navbar, Footer, SingleProduct } from "./components";
+import { Navbar, Footer, SingleProduct, ContactButton } from "./components";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>} />
         <Route path="*" element={<Error></Error>} />
       </Routes>
+      <ContactButton />
       <Footer />
     </Router>
   );

@@ -7,7 +7,7 @@ import {
   Client,
   Reviews,
   BusinessAnimation,
-  ContactButton
+  ContactButton,
 } from "../components";
 import { useDataContext } from "../context/data_context";
 import { clientsRTL, clientsLTR } from "../context/data";
@@ -52,7 +52,6 @@ export const Home = () => {
             <Client data={clientsLTR} rtl={true} />
           </div>
           <Reviews />
-          <ContactButton />
         </div>
       )}
     </>
