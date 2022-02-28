@@ -24,6 +24,7 @@ import CaseStudyCard from "./CaseStudyCard";
 import SingleProduct from "./SingleProduct";
 import Horizontalimages from "./Horizontalimages";
 import DownloadFiles from "./DownloadFiles";
+import ContactButton from "./ContactButton";
 
 export {
   Navbar,
@@ -51,5 +52,6 @@ export {
   CaseStudyCard,
   SingleProduct,
   Horizontalimages,
-  DownloadFiles
+  DownloadFiles,
+  ContactButton,
 };

@@ -625,29 +625,6 @@ body {
   font-weight: 600;
 }
 
-/*============ Extra ============*/
-
-.service-home-img {
-  box-shadow: 10px 10px 5px lightblue;
-}
-
-.error-page {
-  height: 70vh;
-}
-
-.my-custom-scrollbar {
-  position: relative;
-  height: 300px;
-  overflow: auto;
-}
-.table-wrapper-scroll-y {
-  display: block;
-}
-
-.work-img {
-  box-shadow: 8px 10px 8px #36454F;
-}
-
 /*============ Case Studies ============*/
 
 .card-flip {
@@ -783,4 +760,174 @@ body {
 
 .modal-content {
   width: 300px;
+}
+
+/*============ Contact Button ============*/
+
+.main-btn {
+  /*   background: #6985c4; */
+  background: pink;
+  color: black;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  position: fixed;
+  box-sizing: border-box;
+  border: 2px solid #440047;
+  /*   bottom: 10px;
+  right: 10px; */
+  left: 95%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  z-index: 10;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fab,
+.fa {
+  font-size: 30px;
+  color: black;
+  text-shadow: 0 0 10px white;
+}
+
+.sub-btns {
+  height: 63px;
+  width: 63px;
+  position: fixed;
+  /*   bottom: 10px;
+  right: 10px; */
+  left: 95%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.sub-btns > div {
+  box-sizing: border-box;
+  background: #202020;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #440047;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-btn1 {
+  transform: translateX(-62px) rotate(1080deg);
+}
+.active-btn2 {
+  bottom: 60px;
+  transform: translateX(-124px) rotate(1080deg);
+}
+.active-btn3 {
+  bottom: 120px;
+  transform: translateX(-186px) rotate(1080deg);
+}
+.active-btn4 {
+  bottom: 180px;
+  transform: translateX(-248px) rotate(1080deg);
+}
+.active-btn5 {
+  bottom: 240px;
+  left: 5px;
+  transform: translateY(-52px) rotate(1080deg);
+}
+.active-btn6 {
+  bottom: 290px;
+  left: 5px;
+  transform: translateY(-104px) rotate(1080deg);
+}
+.active-btn7 {
+  bottom: 340px;
+  left: 5px;
+  transform: translateY(-156px) rotate(1080deg);
+}
+.active-btn8 {
+  bottom: 390px;
+  left: 5px;
+  transform: translateY(-208px) rotate(1080deg);
+}
+.active-btn9 {
+  bottom: 440px;
+  left: 5px;
+  transform: translateY(-260px) rotate(1080deg);
+}
+
+.btn2 {
+  bottom: 60px;
+  transform: translateX(0);
+}
+
+.btn3 {
+  bottom: 120px;
+  transform: translateX(0);
+}
+
+.btn4 {
+  bottom: 180px;
+  transform: translateX(0);
+}
+
+.touch {
+  height: 50px !important;
+  width: 50px !important;
+  font-family: "poppins";
+}
+
+.btn5 {
+  bottom: 240px;
+  transform: translateY(0);
+}
+
+.btn6 {
+  bottom: 300px;
+  transform: translateY(0);
+}
+
+.btn7 {
+  bottom: 360px;
+  transform: translateY(0);
+}
+
+.btn8 {
+  bottom: 420px;
+  transform: translateY(0);
+}
+
+.btn9 {
+  bottom: 480px;
+  transform: translateY(0);
+}
+
+/*============ Extra ============*/
+
+.service-home-img {
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.error-page {
+  height: 70vh;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 300px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+.work-img {
+  box-shadow: 8px 10px 8px #36454f;
 }
