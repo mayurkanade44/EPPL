@@ -682,11 +682,11 @@ body {
   height: 220px;
 }
 
-.card {
+.caseCard {
   background-color: #e9ecef;
 }
 
-.card:hover {
+.caseCard:hover {
   border: black solid;
 }
 
@@ -930,4 +930,10 @@ body {
 
 .work-img {
   box-shadow: 8px 10px 8px #36454f;
+}
+
+.branch-card:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  opacity: 1;
 }

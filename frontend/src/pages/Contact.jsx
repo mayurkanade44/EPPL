@@ -5,13 +5,15 @@ import globe from "../images/globe.gif";
 import message from "../images/message.gif";
 import fax from "../images/fax.gif";
 import building from "../images/building.gif";
+import location from "../images/map.png";
 
 export const Contact = () => {
   return (
-    <div className="content mt-3">
-      <h2 className="text-center mb-4">
-        <u>Let's Talk</u>
-      </h2>
+    <div className="content my-3">
+      <div className="text-center mb-4">
+        <h2>Let's Talk</h2>
+        <div className="heading-underline" style={{ width: 100 }} />
+      </div>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">
@@ -107,11 +109,12 @@ export const Contact = () => {
                   </div>
                 </form>
               </div>
-              <h2 className="text-center mb-4">
-                <u>Contact Us</u>
-              </h2>
+              <div className="text-center">
+                <h2>Contact Us</h2>
+                <div className="heading-underline" style={{ width: 100 }} />
+              </div>
               <div className="col-md-6 d-flex align-items-stretch">
-                <div className="info-wrap w-100 p-lg-5 p-4 img">
+                <div className="info-wrap w-100 p-3 img">
                   <p className="mb-4"></p>
                   <div className="dbox w-100 d-flex align-items-center">
                     <div className="icon d-flex align-items-center justify-content-center">
@@ -180,6 +183,121 @@ export const Contact = () => {
                     style={{ border: 0 }}
                     loading="lazy"
                   ></iframe>
+                </div>
+              </div>
+              <div className="text-center my-4">
+                <h2>Other Branches</h2>
+                <div className="heading-underline" style={{ width: 140 }} />
+              </div>
+              <div className="col-md-3">
+                <div
+                  className="card branch-card"
+                  style={{ backgroundColor: "black" }}
+                >
+                  <div className="card-body">
+                    <h4 className="card-title text-center">Manglore</h4>
+                    <h6
+                      className="card-subtitle mb-2 text-muted text-center"
+                      style={{ fontSize: 12 }}
+                    >
+                      Branch Office
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card branch-card">
+                  <div className="card-body">
+                    <h4 className="card-title text-center">Banglore</h4>
+                    <h6
+                      className="card-subtitle mb-2 text-muted text-center"
+                      style={{ fontSize: 12 }}
+                    >
+                      Branch Office
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div
+                  className="card branch-card"
+                  style={{ backgroundColor: "black" }}
+                >
+                  <div className="card-body">
+                    <h4 className="card-title text-center">Jamnagar</h4>
+                    <h6
+                      className="card-subtitle mb-2 text-muted text-center"
+                      style={{ fontSize: 12 }}
+                    >
+                      Branch Office
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card branch-card">
+                  <div className="card-body">
+                    <h4 className="card-title text-center">Ahmedabad</h4>
+                    <h6
+                      className="card-subtitle mb-2 text-muted text-center"
+                      style={{ fontSize: 12 }}
+                    >
+                      Branch Office
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 mt-3">
+                <div
+                  className="card branch-card"
+                  style={{ backgroundColor: "black" }}
+                >
+                  <div className="card-body">
+                    <h4 className="card-title text-center">Pune</h4>
+                    <h6
+                      className="card-subtitle mb-2 text-muted text-center"
+                      style={{ fontSize: 12 }}
+                    >
+                      Satellite Office
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 mt-3">
+                <div className="card branch-card">
+                  <div className="card-body">
+                    <h4 className="card-title text-center">Goa</h4>
+                    <h6
+                      className="card-subtitle mb-2 text-muted text-center"
+                      style={{ fontSize: 12 }}
+                    >
+                      Satellite Office
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

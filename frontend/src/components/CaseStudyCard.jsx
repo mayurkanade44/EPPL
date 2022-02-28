@@ -25,7 +25,7 @@ const CaseStudyCard = ({ data }) => {
                       </div>
                     </div>
                     <div className="back">
-                      <div className="card">
+                      <div className="card caseCard">
                         <div className="card-body">
                           <h5 className="card-title mb-2">{item.name}</h5>
                           <p className="card-text mb-4">{item.descriptions}</p>
