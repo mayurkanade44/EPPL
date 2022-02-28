@@ -267,29 +267,6 @@ export const reviews = [
   },
 ];
 
-export const awards = [
-  {
-    id: 1,
-    name: "IPCA - Indian Pest Control Association",
-    img: fb,
-  },
-  {
-    id: 2,
-    name: "NPMA - National  Pest Management Association",
-    img: insta,
-  },
-  {
-    id: 3,
-    name: "Best Pest Award",
-    img: link,
-  },
-  {
-    id: 4,
-    name: "Safe Pest Control Award",
-    img: whatsapp,
-  },
-];
-
 export const faq = [
   {
     id: 1,
