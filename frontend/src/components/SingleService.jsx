@@ -1,14 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
-import { Loading, HorizontalCarousel, Horizontalimages, DownloadFiles } from ".";
+import {
+  Loading,
+  HorizontalCarousel,
+  Horizontalimages,
+  DownloadFiles,
+  FAQ
+} from ".";
 import point from "../images/point.gif";
+import { faq } from "../context/data";
 
 const SingleService = () => {
   const [points, setPoints] = useState([]);
   const { fetchSingleService, singleService, loading } = useDataContext();
-  const { name, description, featured_img, treatment, features, carousel_img, work_img, msds, sop, similar_works } =
-    singleService;
+  const {
+    name,
+    description,
+    featured_img,
+    treatment,
+    features,
+    carousel_img,
+    work_img,
+    msds,
+    sop,
+    similar_works,
+
+  } = singleService;
 
   const { id } = useParams();
 
@@ -21,6 +39,7 @@ const SingleService = () => {
     }
     // eslint-disable-next-line
   }, [id, features]);
+
 
   return (
     <div className="container">
@@ -64,7 +83,30 @@ const SingleService = () => {
             <h5>Treatment:</h5>
             <p>{treatment}</p>
           </div>
-          <div><DownloadFiles msds={msds} sop={sop} works={similar_works} /></div>
+          <div>
+            <div className="container py-3">
+              <h4 className="text-center text-dark">
+                Frequently Asked Questions(FAQ)
+              </h4>
+              <div className="heading-underline" />
+              <div className="row">
+                {faq.map((item) => {
+                  return (
+                    <div
+                      key={item.id}
+                      className="col-md-6"
+                      style={{ padding: 0 }}
+                    >
+                      <FAQ {...item}></FAQ>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div>
+            <DownloadFiles msds={msds} sop={sop} works={similar_works} />
+          </div>
         </>
       )}
     </div>

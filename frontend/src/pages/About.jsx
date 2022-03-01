@@ -17,12 +17,22 @@ export const About = () => {
       <Vision />
       <Awards />
       <HowWeDo />
-      <div className="py-3" style={{ backgroundColor: "#f4f7fa" }}>
-        <h2 className="text-center text-dark">
-          Frequently Asked Questions(FAQ)
-        </h2>
-        <div className="heading-underline" />
-        <FAQ data={faq}></FAQ>
+      <div style={{ backgroundColor: "#f4f7fa" }}>
+        <div className="container py-3">
+          <h2 className="text-center text-dark">
+            Frequently Asked Questions(FAQ)
+          </h2>
+          <div className="heading-underline" />
+          <div className="row">
+            {faq.map((item) => {
+              return (
+                <div key={item.id} className="col-md-6" style={{ padding: 0 }}>
+                  <FAQ {...item}></FAQ>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
