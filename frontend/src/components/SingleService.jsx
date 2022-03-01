@@ -80,7 +80,7 @@ const SingleService = () => {
           </div>
           <Horizontalimages images={work_img} />
           <div className="my-4">
-            <h5>Treatment:</h5>
+            <h5>Treatment: </h5>
             <p>{treatment}</p>
           </div>
           <div>
