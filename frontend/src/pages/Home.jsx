@@ -7,7 +7,6 @@ import {
   Client,
   Reviews,
   BusinessAnimation,
-  ContactButton,
 } from "../components";
 import { useDataContext } from "../context/data_context";
 import { clientsRTL, clientsLTR } from "../context/data";
