@@ -9,7 +9,7 @@ const Counter = () => {
 
   return (
     <div className="bg-dark">
-      <div className="container">
+      <div className="container py-3">
         <h2 className="text-center p-2">Our Journey So Far</h2>
         <div className="heading-underline"></div>
         <div className="row">

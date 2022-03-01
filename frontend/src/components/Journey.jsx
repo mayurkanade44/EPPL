@@ -6,13 +6,9 @@ const Journey = () => {
   return (
     <section className="page-section" id="about">
       <div className="container">
-        <div className="text-center">
-          <h2 className="section-heading text-uppercase">Our Journey</h2>
-          <h3 className="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
-        </div>
-        <ul className="timeline">
+        <h2 className="section-heading text-center">Our Journey</h2>
+        <div className="heading-underline" />
+        <ul className="timeline mt-5">
           <li>
             <div className="timeline-image">
               <img className="rounded-circle img-fluid" src={fb} alt="..." />
