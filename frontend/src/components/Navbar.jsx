@@ -9,7 +9,7 @@ export const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
         <div className="container">
-          <Link to="/" className="d-flex navbar-brand nav-link">
+          <Link to="/" className="d-flex navbar-brand nav-link" style={{marginRight:10}}>
             <img
               src={eppl}
               style={{ height: 50, width: 180, marginRight: 10 }}
@@ -29,7 +29,7 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarColor03">
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav">
               <li className="nav-item dropdown">
                 <div
                   className="nav-link"
@@ -38,7 +38,7 @@ export const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <h6>Our Solutions</h6>
+                  <h5>Our Solutions</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   {services.map((service) => {
@@ -60,19 +60,19 @@ export const Navbar = () => {
               </li>
               <li className="nav-item dropdown">
                 <Link to="/business/recCjq0CzUMSEBlHH" className="nav-link">
-                  <h6>Our Business Solutions</h6>
+                  <h5>Business Solutions</h5>
                 </Link>
               </li>
               <li className="nav-item ">
                 <Link to="/knowus" className="nav-link">
-                  <h6>Know Us</h6>
+                  <h5>Know Us</h5>
                 </Link>
               </li>
               <li className="nav-item dropdown">
                 <div
                   className="nav-link"
                 >
-                  <h6>Products</h6>
+                  <h5>Products</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   {products.map((service) => {
@@ -94,12 +94,12 @@ export const Navbar = () => {
               
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
-                  <h6>Buzz</h6>
+                  <h5>Buzz</h5>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/contact" className="nav-link">
-                  <h6>Contact</h6>
+                  <h5>Contact</h5>
                 </Link>
               </li>
             </ul>

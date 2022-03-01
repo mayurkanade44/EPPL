@@ -20,7 +20,6 @@ const SingleBusiness = () => {
   const fetchCases = async (id) => {
     const temp = await caseStudy.filter((m) => m.business[0] === id);
     setCaseStudies(temp);
-    console.log(caseStudy);
   };
 
   useEffect(() => {

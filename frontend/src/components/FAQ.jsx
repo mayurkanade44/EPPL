@@ -5,9 +5,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const FAQ = ({ data }) => {
   const [showInfo, setShowInfo] = useState(false);
-  const toggleClass = () => {
-    setShowInfo(!showInfo);
-  };
+
   return (
     <div className="container">
       <div className="row">
@@ -18,7 +16,12 @@ const FAQ = ({ data }) => {
                 <div className={showInfo ? "faq active" : "faq"}>
                   <h5 className="faq-title ">{d.ques}</h5>
                   <p className="faq-text">{d.ans}</p>
-                  <button className="faq-toggle" onClick={toggleClass}>
+                  <button
+                    className="faq-toggle"
+                    onClick={() => {
+                      setShowInfo(!showInfo);
+                    }}
+                  >
                     <FontAwesomeIcon icon={faArrowDown} size="lg" />
                   </button>
                 </div>
