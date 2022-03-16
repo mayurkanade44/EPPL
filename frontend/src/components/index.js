@@ -11,7 +11,6 @@ import FAQ from "./FAQ";
 import AboutExpandCard from "./AboutExpandCard";
 import Footer from "./Footer";
 import Journey from "./Journey";
-import Products from "./Products";
 import SingleBusiness from "./SingleBusiness";
 import VerticalCarousel from "./VerticalCarousel";
 import ProductsList from "./ProductsList";
@@ -27,7 +26,6 @@ import DownloadFiles from "./DownloadFiles";
 import ContactButton from "./ContactButton";
 import Vision from "./Vision";
 
-
 export {
   Navbar,
   Carousel,
@@ -42,7 +40,6 @@ export {
   AboutExpandCard,
   Footer,
   Journey,
-  Products,
   BusinessAnimation,
   SingleBusiness,
   VerticalCarousel,
@@ -57,5 +54,4 @@ export {
   DownloadFiles,
   ContactButton,
   Vision,
-  
 };

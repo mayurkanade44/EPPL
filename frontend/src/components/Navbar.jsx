@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import eppl from "../images/eppl1.png";
 import { useDataContext } from "../context/data_context";
+import Hotline from "./Hotline";
 
 export const Navbar = () => {
   const { services, products } = useDataContext();
@@ -9,7 +10,11 @@ export const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
         <div className="container">
-          <Link to="/" className="d-flex navbar-brand nav-link" style={{marginRight:10}}>
+          <Link
+            to="/"
+            className="d-flex navbar-brand nav-link"
+            style={{ marginRight: 10 }}
+          >
             <img
               src={eppl}
               style={{ height: 50, width: 180, marginRight: 10 }}
@@ -69,9 +74,7 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <div
-                  className="nav-link"
-                >
+                <div className="nav-link">
                   <h5>Products</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,16 +85,14 @@ export const Navbar = () => {
                           className="dropdown-item"
                           to={`/product/${service.id}`}
                         >
-                          <span>
-                            {service.name}
-                          </span>
+                          <span>{service.name}</span>
                         </Link>
                       </li>
                     );
                   })}
                 </ul>
               </li>
-              
+
               <li className="nav-item">
                 <Link to="/about" className="nav-link">
                   <h5>Buzz</h5>
@@ -116,6 +117,7 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Hotline />
     </div>
   );
 };
