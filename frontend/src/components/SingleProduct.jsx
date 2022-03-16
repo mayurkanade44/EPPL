@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDataContext } from "../context/data_context";
 import { useParams, Link } from "react-router-dom";
-import { Loading } from ".";
+import { Loading, SideBar } from ".";
 
 const SingleProduct = () => {
   const [points, setPoints] = useState([]);
@@ -26,32 +26,7 @@ const SingleProduct = () => {
     <div className="container">
       <div className="row my-4">
         <div className="col-md-3">
-          <div className="text-center">
-            <h4 className="my-5 ">Product List</h4>
-            <div className="table-wrapper-scroll-y my-custom-scrollbar">
-              <table className="table table-bordered table-hover mb-0">
-                <thead>
-                  <tr>
-                    <th scope="col">Product Name</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sort.map((product) => {
-                    return (
-                      <tr key={product.id}>
-                        <Link
-                          to={`/product/${product.id}`}
-                          style={{ textDecoration: "none" }}
-                        >
-                          <td>{product.name}</td>
-                        </Link>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <SideBar sort={sort} id={id} />
         </div>
         {loading ? (
           <Loading />

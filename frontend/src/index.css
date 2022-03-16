@@ -872,6 +872,65 @@ body {
   transform: translateY(0);
 }
 
+/*============ SideBar ============*/
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: black;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.sidebar.active {
+  margin-left: -250px;
+}
+
+.sidebar .sidebar-header {
+  padding: 10px;
+  background: black;
+}
+
+.sidebar ul.components {
+  padding: 1px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+.sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  color: black;
+  background: #fff;
+}
+
+.sidebar ul li.active > a,h5
+a[aria-expanded="true"] {
+  color: #2ecc71;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: -250px;
+  }
+  .sidebar.active {
+    margin-left: 0;
+  }
+  .sidebarCollapse span {
+    display: none;
+  }
+}
+
 /*============ Extra ============*/
 
 .service-home-img {
@@ -907,4 +966,3 @@ body {
   color: white;
   font-size: 1.2rem;
 }
-

@@ -25,6 +25,7 @@ import Horizontalimages from "./Horizontalimages";
 import DownloadFiles from "./DownloadFiles";
 import ContactButton from "./ContactButton";
 import Vision from "./Vision";
+import SideBar from "./SideBar";
 
 export {
   Navbar,
@@ -54,4 +55,5 @@ export {
   DownloadFiles,
   ContactButton,
   Vision,
+  SideBar,
 };
