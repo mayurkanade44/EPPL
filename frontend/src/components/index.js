@@ -26,6 +26,7 @@ import DownloadFiles from "./DownloadFiles";
 import ContactButton from "./ContactButton";
 import Vision from "./Vision";
 import SideBar from "./SideBar";
+import Treatment from "./Treatment";
 
 export {
   Navbar,
@@ -56,4 +57,5 @@ export {
   ContactButton,
   Vision,
   SideBar,
+  Treatment,
 };

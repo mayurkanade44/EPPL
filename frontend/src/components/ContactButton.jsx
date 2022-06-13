@@ -9,7 +9,7 @@ const ContactButton = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div>
+    <div className="contact-btn">
       <div
         className="main-btn"
         id="main-btn"

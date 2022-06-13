@@ -52,3 +52,26 @@
     transform: perspective(1000px) rotateY(360deg);
   }
 }
+
+@media (max-width: 767px) {
+  .caro-img {
+    height: 100px;
+    -webkit-box-reflect: below 15px
+      linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  }
+  .gallery {
+    margin-top: 25px;
+  }
+  .gallery span {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(120px);
+  }
+  .carousel-parent {
+    height: 44vh !important;
+  }
+}

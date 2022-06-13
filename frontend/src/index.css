@@ -774,10 +774,8 @@ body {
   position: fixed;
   box-sizing: border-box;
   border: 2px solid #440047;
-  /*   bottom: 10px;
-  right: 10px; */
   left: 95%;
-  top: 555px;
+  bottom: 0px;
   transform: translate(-50%, -50%);
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -793,10 +791,8 @@ body {
   height: 63px;
   width: 63px;
   position: fixed;
-  /*   bottom: 10px;
-  right: 10px; */
   left: 95%;
-  top: 798px;
+  bottom: -238px;
   transform: translate(-50%, -50%);
 }
 
@@ -835,11 +831,11 @@ body {
   left: 5px;
   transform: translateY(-208px) rotate(1080deg);
 }
-.active-btn5 {
+/* .active-btn5 {
   bottom: 440px;
   left: 5px;
   transform: translateY(-260px) rotate(1080deg);
-}
+} */
 
 .touch {
   height: 40px !important;
@@ -867,9 +863,15 @@ body {
   transform: translateY(0);
 }
 
-.btn5 {
+/* .btn5 {
   bottom: 480px;
   transform: translateY(0);
+} */
+
+@media (max-width: 767px) {
+  .contact-btn {
+    display: none;
+  }
 }
 
 /*============ SideBar ============*/
@@ -975,17 +977,10 @@ h5 a[aria-expanded="true"] {
   position: fixed;
   box-sizing: border-box;
   border: 2px solid #0ba9d1;
-  /*   bottom: 10px; */
-  left: 25px; 
+  left: 25px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "Poppins", sans-serif;
   text-align: center;
-  z-index: 10;
-  transition: 1s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-
 }

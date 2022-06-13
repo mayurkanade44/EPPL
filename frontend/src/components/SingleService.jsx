@@ -6,7 +6,8 @@ import {
   HorizontalCarousel,
   Horizontalimages,
   DownloadFiles,
-  FAQ
+  FAQ,
+  Treatment
 } from ".";
 import point from "../images/point.gif";
 import { faq } from "../context/data";
@@ -43,7 +44,18 @@ const SingleService = () => {
 
   return (
     <>
-      <button className="btn btn-dark know-more">Know More</button>
+      <button className="btn btn-dark know-more">
+        <a
+          style={{
+            color: "white",
+          }}
+          target="_blank"
+          rel="noreferrer"
+          href={similar_works && similar_works[0].url}
+        >
+          Know More
+        </a>
+      </button>
       <div className="container">
         {loading ? (
           <Loading />
@@ -87,8 +99,8 @@ const SingleService = () => {
             </div>
             <Horizontalimages images={work_img} />
             <div className="my-4">
-              <h5>Treatment: </h5>
-              <p>{treatment}</p>
+              <h5>Treatment:</h5>
+              <Treatment id={id}/>
             </div>
             <div>
               <div className="container py-3">
