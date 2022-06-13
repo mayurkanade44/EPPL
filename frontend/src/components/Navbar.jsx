@@ -6,6 +6,14 @@ import Hotline from "./Hotline";
 
 export const Navbar = () => {
   const { services, products } = useDataContext();
+  const sortServices = services.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
+
+  const sortProducts = products.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
@@ -34,7 +42,7 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarColor03">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav mx-auto">
               <li className="nav-item dropdown">
                 <div
                   className="nav-link"
@@ -46,7 +54,7 @@ export const Navbar = () => {
                   <h5>Our Solutions</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {services.map((service) => {
+                  {sortServices.map((service) => {
                     return (
                       <li key={service.id}>
                         <Link
@@ -78,7 +86,7 @@ export const Navbar = () => {
                   <h5>Products</h5>
                 </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {products.map((service) => {
+                  {sortProducts.map((service) => {
                     return (
                       <li key={service.id}>
                         <Link
