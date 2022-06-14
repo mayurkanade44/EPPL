@@ -7,7 +7,7 @@ import {
   HowWeDo,
   Vision,
 } from "../components";
-import { faq } from "../context/data";
+import { MSfaq } from "../context/data";
 
 export const About = () => {
   return (
@@ -24,7 +24,7 @@ export const About = () => {
           </h2>
           <div className="heading-underline" />
           <div className="row">
-            {faq.map((item) => {
+            {MSfaq.map((item) => {
               return (
                 <div key={item.id} className="col-md-6" style={{ padding: 0 }}>
                   <FAQ {...item}></FAQ>

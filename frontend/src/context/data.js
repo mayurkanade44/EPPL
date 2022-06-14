@@ -267,7 +267,7 @@ export const reviews = [
   },
 ];
 
-export const faq = [
+export const MSfaq = [
   {
     id: 1,
     ques: "Is Staff Vaccinated?",
@@ -281,6 +281,29 @@ export const faq = [
   {
     id: 3,
     ques: "What Are Prices For Your Services?",
+    ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
+  },
+  {
+    id: 4,
+    ques: "Is Their Any Warrenty?",
+    ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
+  },
+];
+
+export const GSfaq = [
+  {
+    id: 1,
+    ques: "Is Staff ?",
+    ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
+  },
+  {
+    id: 2,
+    ques: "What Type Of Services Do You Offer?",
+    ans: "Green Shield, Ratrid, Bugsfree, Flyban, Termiproof",
+  },
+  {
+    id: 3,
+    ques: "What Are Prices For Your Services any?",
     ans: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iure, odit sunt eaque laborum distinctio quo magni",
   },
   {

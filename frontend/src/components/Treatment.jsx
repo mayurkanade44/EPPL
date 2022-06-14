@@ -17,7 +17,7 @@ const Treatment = ({ id }) => {
           {!read ? (
             <button
               className="btn"
-              style={{ color: "blue", paddingLeft:2 }}
+              style={{ color: "blue", paddingLeft: 1 }}
               onClick={() => setRead(!read)}
             >
               <b>Read More</b>
@@ -53,8 +53,7 @@ const Treatment = ({ id }) => {
               sprays are sustainable when applied at the specified label claims,
               mild odor, but high efficacy makes this a choice for all external
               &amp; lawn / garden area applications.
-              <br />
-              <br />
+              <br /> <br />
               <b>4. MICRONING</b>:- Use of aqua based formulations dispensed in
               microns to open air using a power tool, resulting in floating
               airborne particles targeting flying mosquitoes while creating a
@@ -63,8 +62,7 @@ const Treatment = ({ id }) => {
               knockdown and residual dual effect. Our affiliation with BAYER
               gives our services a technically backed advantage. In microning
               applications, AQUAKOTHRINE is our preferred formulation.
-              <br />
-              <br />
+              <br /> <br />
               <b>5. FOGGING</b>
               <br /> <b>Thermal-Fogging</b>:- Most preferred mode of mosquito
               management, it provides a quick solution and a equally satisfying

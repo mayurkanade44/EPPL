@@ -7,13 +7,14 @@ import {
   Horizontalimages,
   DownloadFiles,
   FAQ,
-  Treatment
+  Treatment,
 } from ".";
 import point from "../images/point.gif";
-import { faq } from "../context/data";
+import { MSfaq, GSfaq } from "../context/data";
 
 const SingleService = () => {
   const [points, setPoints] = useState([]);
+  const [faq, setFaq] = useState([]);
   const { fetchSingleService, singleService, loading } = useDataContext();
   const {
     name,
@@ -26,7 +27,6 @@ const SingleService = () => {
     msds,
     sop,
     similar_works,
-
   } = singleService;
 
   const { id } = useParams();
@@ -34,13 +34,15 @@ const SingleService = () => {
   useEffect(() => {
     fetchSingleService(id);
 
+    if (id === "recV1wm4QA5uQqv1r") {
+      return setFaq(GSfaq);
+    } else setFaq(MSfaq);
     if (features) {
       const temp = features.split(".");
       setPoints(temp);
     }
     // eslint-disable-next-line
   }, [id, features]);
-
 
   return (
     <>
@@ -53,7 +55,7 @@ const SingleService = () => {
           rel="noreferrer"
           href={similar_works && similar_works[0].url}
         >
-          Know More
+          Read More
         </a>
       </button>
       <div className="container">
@@ -100,7 +102,7 @@ const SingleService = () => {
             <Horizontalimages images={work_img} />
             <div className="my-4">
               <h5>Treatment:</h5>
-              <Treatment id={id}/>
+              <Treatment id={id} />
             </div>
             <div>
               <div className="container py-3">
