@@ -984,3 +984,10 @@ h5 a[aria-expanded="true"] {
   text-align: center;
   cursor: pointer;
 }
+
+.eye {
+  right: 9%;
+  top: 140px;
+  position:absolute;
+  color: black;
+}
