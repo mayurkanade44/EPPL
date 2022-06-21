@@ -38,10 +38,12 @@ const ServiceHome = ({ index, id, name, image, description }) => {
               </Link>
             </div>
             <div className="col-md-8">
-              <h2>{description.substring(0, 150)}...</h2>
-              <Link className="btn btn-dark" to={`/services/${id}`}>
-                Know More
-              </Link>
+              <h2>
+                {description.substring(0, 150)}...
+                <Link className="btn" style={{color:'blue', fontSize:25, paddingLeft:1}} to={`/services/${id}`}>
+                  Read More
+                </Link>
+              </h2>
             </div>
           </div>
         </motion.div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDataContext } from "../context/data_context";
+import eye from "../images/eye2.png";
 import {
   Loading,
   HorizontalCarousel,
@@ -34,13 +35,15 @@ const SingleService = () => {
   useEffect(() => {
     fetchSingleService(id);
 
-    if (id === "recV1wm4QA5uQqv1r") {
-      return setFaq(GSfaq);
-    } else setFaq(MSfaq);
     if (features) {
       const temp = features.split(".");
       setPoints(temp);
     }
+
+    if (id === "recV1wm4QA5uQqv1r") {
+      return setFaq(GSfaq);
+    } else setFaq(MSfaq);
+
     // eslint-disable-next-line
   }, [id, features]);
 
@@ -66,6 +69,17 @@ const SingleService = () => {
             <HorizontalCarousel images={carousel_img} />
             <h1 className="text-center">{name}</h1>
             <div className="heading-underline" />
+            <div className="eye">
+              <span className="text-warning">
+                <img
+                  src={eye}
+                  alt=""
+                  style={{ height: 30, paddingRight: 4, paddingBottom: 3 }}
+                />
+                {Math.ceil(Math.random() * 10)}
+              </span>{" "}
+              people are watching this service
+            </div>
             <div className="row">
               <div className="col-md-4">
                 <h5>Description:</h5>
