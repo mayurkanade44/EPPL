@@ -70,7 +70,7 @@ const SingleService = () => {
             <h1 className="text-center">{name}</h1>
             <div className="heading-underline" />
             <div className="eye">
-              <span className="text-warning">
+              <span className="text-warning fw-bolder fs-4">
                 <img
                   src={eye}
                   alt=""

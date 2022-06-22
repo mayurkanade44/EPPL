@@ -948,6 +948,7 @@ h5 a[aria-expanded="true"] {
   height: 300px;
   overflow: auto;
 }
+
 .table-wrapper-scroll-y {
   display: block;
 }
@@ -988,6 +989,6 @@ h5 a[aria-expanded="true"] {
 .eye {
   right: 9%;
   top: 140px;
-  position:absolute;
+  position: absolute;
   color: black;
 }
