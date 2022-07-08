@@ -67,7 +67,7 @@ const SingleService = () => {
         ) : (
           <>
             <HorizontalCarousel images={carousel_img} />
-            <h1 className="text-center">{name}</h1>
+            <h1 className="text-center">{name} Service</h1>
             <div className="heading-underline" />
             <div className="eye">
               <span className="text-success fw-bolder fs-4">
@@ -81,15 +81,21 @@ const SingleService = () => {
               people are watching this service
             </div>
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-5">
                 <h5>Description:</h5>
                 <p>{description}</p>
               </div>
-              <div className="col-md-4 d-flex justify-content-center align-items-center">
-                {featured_img && <img src={featured_img[0].url} alt={name} />}
+              <div className="col-md-2 d-flex justify-content-center align-items-center">
+                {featured_img && (
+                  <img
+                    style={{ width: 220 }}
+                    src={featured_img[0].url}
+                    alt={name}
+                  />
+                )}
               </div>
-              <div className="col-md-4">
-                <h5>Features:</h5>
+              <div className="col-md-5">
+                <h5 style={{ paddingLeft: 34 }}>Features:</h5>
                 <div>
                   <ul style={{ listStyleType: "none" }}>
                     {points &&
@@ -104,7 +110,10 @@ const SingleService = () => {
                               src={point}
                               alt=""
                             />
-                            <p className="d-inline">{` ${item}`}</p>
+                            <p
+                              className="d-inline"
+                              style={{ color: "#242a31" }}
+                            >{` ${item}`}</p>
                           </li>
                         );
                       })}

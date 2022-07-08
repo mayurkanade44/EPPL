@@ -31,7 +31,7 @@ export const Home = () => {
           <div className="heading-underline" />
           {featured &&
             featured.map((service, index) => {
-              const { id, name, img, description } = service;
+              const { id, name, img, description, sub_description } = service;
               return (
                 <div key={id}>
                   <ServiceHome
@@ -40,6 +40,7 @@ export const Home = () => {
                     name={name}
                     image={img}
                     description={description}
+                    subDesc={sub_description}
                   />
                 </div>
               );

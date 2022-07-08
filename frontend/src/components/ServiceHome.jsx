@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-const ServiceHome = ({ index, id, name, image, description }) => {
+const ServiceHome = ({ index, id, name, image, description, subDesc }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -39,7 +39,7 @@ const ServiceHome = ({ index, id, name, image, description }) => {
             </div>
             <div className="col-md-8">
               <h2>
-                {description.substring(0, 150)}...
+                {subDesc}
                 <Link className="btn" style={{color:'blue', fontSize:25, paddingLeft:1}} to={`/services/${id}`}>
                   Read More
                 </Link>
