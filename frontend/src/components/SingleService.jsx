@@ -70,13 +70,13 @@ const SingleService = () => {
             <h1 className="text-center">{name}</h1>
             <div className="heading-underline" />
             <div className="eye">
-              <span className="text-warning fw-bolder fs-4">
+              <span className="text-success fw-bolder fs-4">
                 <img
                   src={eye}
                   alt=""
                   style={{ height: 30, paddingRight: 4, paddingBottom: 3 }}
                 />
-                {Math.ceil(Math.random() * 10)}
+                {Math.ceil(Math.random() * 20)}
               </span>{" "}
               people are watching this service
             </div>
@@ -85,7 +85,6 @@ const SingleService = () => {
                 <h5>Description:</h5>
                 <p>{description}</p>
               </div>
-
               <div className="col-md-4 d-flex justify-content-center align-items-center">
                 {featured_img && <img src={featured_img[0].url} alt={name} />}
               </div>
