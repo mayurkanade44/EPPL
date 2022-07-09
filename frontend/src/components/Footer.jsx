@@ -75,7 +75,7 @@ const Footer = () => {
                       Road, Santacruz West. Mumbai - 400054.
                     </span>
                   </div>
-                  <p style={{ marginBottom: 9}}>
+                  <p style={{ marginBottom: 9 }}>
                     <FontAwesomeIcon className="me-2" icon={faEnvelope} />
                     epcorn@yahoo.in
                   </p>
@@ -89,14 +89,9 @@ const Footer = () => {
                   <h4 className="mb-4 ms-2 font-weight-bold">Follow Us</h4>
                   {social.map((s) => {
                     return (
-                      <Link
-                        key={s.id}
-                        className="btn me-2 icon"
-                        to="/"
-                        role="button"
-                      >
+                      <a href={s.url} className="btn me-2 icon" target='_blank'>
                         <img className="img-fluid" src={s.img} alt="" />
-                      </Link>
+                      </a>
                     );
                   })}
                 </div>

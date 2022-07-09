@@ -78,18 +78,22 @@ export const social = [
   {
     id: 1,
     img: fb,
+    url: "https://www.facebook.com/Express-Pesticides-Pvt-Ltd-484956168264132/",
   },
   {
     id: 2,
     img: insta,
+    url: "https://www.instagram.com/expresspesticidespvtltd/",
   },
   {
     id: 3,
     img: link,
+    url: "https://www.linkedin.com/company/express-pesticides-private-limited/",
   },
   {
     id: 4,
     img: whatsapp,
+    url: "https://www.linkedin.com/company/express-pesticides-private-limited/",
   },
 ];
 
