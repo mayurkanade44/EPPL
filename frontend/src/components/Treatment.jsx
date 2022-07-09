@@ -4,7 +4,27 @@ const Treatment = ({ id }) => {
   const [read, setRead] = useState(false);
 
   if (id === "recrxTqzKUdMTXtP7") {
-    return <h1>Test</h1>;
+    return (
+      <p style={{ color: "#242a31" }}>
+        <b>
+          GREENSHIELD services a branded approach towards cockroach management
+          adopting chemical and non chemical process.
+        </b>
+        <br />
+        <b>Chemical Spray</b> ensures better efficacy and more widespread area
+        is covered specially to locations which are not ideal for GEL
+        application but most preferred by roaches.
+        <br />
+        <b>Gel</b> is the most potent, long lasting and works with 2X factor as
+        it affects roaches wide touch and intake as gel is a food based matrix
+        specially formulated for India conditions.
+        <br />
+        <b>Trapping</b> is a new format introduced for key customers who
+        understand and give more importance to innovative means of management,
+        it promotes zero pesticides and is promoted for use as a combination
+        tool.
+      </p>
+    );
   } else if (id === "recV1wm4QA5uQqv1r") {
     return (
       <p style={{ color: "#242a31" }}>

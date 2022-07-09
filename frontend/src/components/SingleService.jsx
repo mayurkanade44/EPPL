@@ -113,7 +113,9 @@ const SingleService = () => {
                             <p
                               className="d-inline"
                               style={{ color: "#242a31" }}
-                            >{` ${item}`}</p>
+                            >
+                              {` ${item}`}
+                            </p>
                           </li>
                         );
                       })}

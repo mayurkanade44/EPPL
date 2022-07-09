@@ -75,7 +75,7 @@ const Footer = () => {
                       Road, Santacruz West. Mumbai - 400054.
                     </span>
                   </div>
-                  <p>
+                  <p style={{ marginBottom: 9}}>
                     <FontAwesomeIcon className="me-2" icon={faEnvelope} />
                     epcorn@yahoo.in
                   </p>
