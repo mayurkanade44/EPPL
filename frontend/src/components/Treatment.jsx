@@ -32,7 +32,12 @@ const Treatment = ({ id }) => {
         <b>Tab or Granular Application</b>:- The most ECO Friendly &amp;
         Environmentally responsible means of modern day mosquito management is
         use of TABLETS &amp; GRANUALS which are odorless and has good tolerance
-        on account to mammalian toxicity...
+        on account to mammalian toxicity.
+        <br />
+        <b>Liquid Based Spray</b>:- This process has been in active use by
+        almost all municipal and health bodies globally, using EC based liquid
+        sprays in stagnant waters to target the larval stage where its most
+        susceptible...
         {!read ? (
           <button
             className="btn"
@@ -43,16 +48,11 @@ const Treatment = ({ id }) => {
           </button>
         ) : (
           <>
-            <br />
-            <b>Liquid Based Spray</b>:- This process has been in active use by
-            almost all municipal and health bodies globally, using EC based
-            liquid sprays in stagnant waters to target the larval stage where
-            its most susceptible. <br /> <b> Oil Spill</b>:- “MLO” Malarial
-            Larval Oil is used in a direct spill over stagnant water in a bid to
-            disrupt the life cycle of mosquitoes, the oil forms a film over the
-            water not allowing the larvae to breath, suffocating the larvae from
-            breathing as it emerges from the bottom of the water at regular
-            intervals.
+            <br /> <b> Oil Spill</b>:- “MLO” Malarial Larval Oil is used in a
+            direct spill over stagnant water in a bid to disrupt the life cycle
+            of mosquitoes, the oil forms a film over the water not allowing the
+            larvae to breath, suffocating the larvae from breathing as it
+            emerges from the bottom of the water at regular intervals.
             <br /> <br />
             <b>2. RESIDUAL SPRAY</b>:- Residual Spray has over the recent years
             extended from just not being internal, extending to external areas
@@ -119,6 +119,75 @@ const Treatment = ({ id }) => {
         to contain rodent infestation in a given space.
       </p>
     );
-  } return <div>Treatment</div>;
+  } else if (id === "recrxbVfcpnJVxihy") {
+    return (
+      <p style={{ color: "#242a31" }}>
+        <b>1. Spot Treatment</b> is where only the affected given areas is
+        treated by spray or foam application, this treatment is a one time spot
+        on application and doesn’t involve drilling injecting process.
+        <br />
+        <br />
+        <b>2. Annual Check Up treatment</b> is where the given space is treated
+        by one major service by drilling injecting sealing process followed by
+        check up services as charted...
+        {!read ? (
+          <button
+            className="btn"
+            style={{ color: "blue", paddingLeft: 1 }}
+            onClick={() => setRead(!read)}
+          >
+            <b>Read More</b>
+          </button>
+        ) : (
+          <>
+            <br />
+            <br />
+            <b>3. Five Year Service Warranty Application</b> is a scheduled
+            services provided for the entire structure post its construction and
+            when inhabited. It includes all internal and external areas of the
+            structure covering its various access points and many other elements
+            that associate to the structure.
+            <br />
+            <br />
+            <b>4. Ten Year Service Warranty Application</b> is a service
+            implemented for under construction projects, the application of
+            termiproof chemicals is implemented at various stages of the
+            construction to ensure the termite infestation is restricted at the
+            base of the construction.
+            <br />
+            <br />
+            <b>5. Interior Stage Termite Management </b> is a service
+            implemented categorically for spaces like homes/offices/structures
+            where project works / interior refurbishment works are underway, the
+            aim of implementing these services is to ensure the untreated
+            walls/wood/gypsum boards/plywood/pop layout/brick works are all
+            effectively treated to dissuade termite presence during the project
+            stage works. <br /> <br />
+            <b>6. Continued Injecting Process</b> is a new innovative process in
+            termite management specifically designed after years of tracking the
+            need to work around structures where there have been termite
+            resurgence, where competitors failed to deliver results following
+            regular charted attempts. It involves a technical study of the
+            property, detailed inspections of its existing and past infestation,
+            prolonged intra angular probing and movement of termites exploits
+            finally deciding where it calls for an intra semantical injecting of
+            termiproof chemicals.
+            <br />
+            <br />
+            <b>7. Systematic Injecting Process </b> is the introduction of a new
+            service segment in termite management, which removes the need for
+            drilling expensive flooring OR incurring cost of paint touch up when
+            holes are drilled in the walls. Our Research and Development team
+            adopted a well documented innovative means of application
+            prevailing, allowed dispensing of termiproof chemicals at intervals
+            and where we developed an improved version of delivery system
+            bringing about assurance on delivery, aesthetics and improving means
+            of application.
+          </>
+        )}
+      </p>
+    );
+  }
+  return <div>Treatment</div>;
 };
 export default Treatment;
