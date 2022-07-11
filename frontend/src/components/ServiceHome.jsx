@@ -40,7 +40,11 @@ const ServiceHome = ({ index, id, name, image, description, subDesc }) => {
             <div className="col-md-8">
               <h2>
                 {subDesc}
-                <Link className="btn" style={{color:'blue', fontSize:25, paddingLeft:1}} to={`/services/${id}`}>
+                <Link
+                  className="btn"
+                  style={{ color: "blue", fontSize: 25, paddingLeft: 1 }}
+                  to={`/services/${id}`}
+                >
                   Read More
                 </Link>
               </h2>

@@ -89,7 +89,7 @@ const Footer = () => {
                   <h4 className="mb-4 ms-2 font-weight-bold">Follow Us</h4>
                   {social.map((s) => {
                     return (
-                      <a href={s.url} className="btn me-2 icon" target='_blank'>
+                      <a href={s.url} className="btn me-2 icon" target="_blank">
                         <img className="img-fluid" src={s.img} alt="" />
                       </a>
                     );

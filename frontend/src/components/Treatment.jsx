@@ -105,7 +105,20 @@ const Treatment = ({ id }) => {
         )}
       </p>
     );
-  }
-  return <div>Treatment</div>;
+  } else if (id === "rectJD7Q0AmyDjtoS") {
+    return (
+      <p style={{ color: "#242a31" }}>
+        Ratrid Service is an integrated approach consisting of primarily
+        Identifying the rodent entry point, baiting external areas, using catch
+        traps and smart traps internally to address infestation which has
+        already made entry. Use of repellents brings in a new dimension to the
+        program offering as it’s a non poison based and humane approach,
+        promoting an innovative way of rodent management. EPCORN is the first
+        company in INDIA to dissuade the use of <b>GUM TRAPS</b> and actively
+        promotes use of RIM and Repelling services in addition to use of baits
+        to contain rodent infestation in a given space.
+      </p>
+    );
+  } return <div>Treatment</div>;
 };
 export default Treatment;
