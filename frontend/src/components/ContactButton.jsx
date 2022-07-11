@@ -34,7 +34,11 @@ const ContactButton = () => {
         </div>
         <div className={toggle ? `active-btn2 touch` : `btn2`}>
           <center>
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/Express-Pesticides-Pvt-Ltd-484956168264132/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={facebook} style={{ height: 60 }} alt="" />
             </a>
           </center>
