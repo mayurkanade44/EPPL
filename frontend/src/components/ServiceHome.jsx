@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-const ServiceHome = ({ index, id, name, image, description, subDesc }) => {
+const ServiceHome = ({ id, name, image, subDesc }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });

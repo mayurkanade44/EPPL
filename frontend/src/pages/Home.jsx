@@ -30,16 +30,14 @@ export const Home = () => {
           <h1 className="text-center mt-4">Our Services</h1>
           <div className="heading-underline" />
           {featured &&
-            featured.map((service, index) => {
-              const { id, name, img, description, sub_description } = service;
+            featured.map((service) => {
+              const { id, name, img, sub_description } = service;
               return (
                 <div key={id}>
                   <ServiceHome
                     id={id}
-                    index={index}
                     name={name}
                     image={img}
-                    description={description}
                     subDesc={sub_description}
                   />
                 </div>

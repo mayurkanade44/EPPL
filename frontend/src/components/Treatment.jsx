@@ -48,22 +48,25 @@ const Treatment = ({ id }) => {
           </button>
         ) : (
           <>
-            <br /> <b> Oil Spill</b>:- “MLO” Malarial Larval Oil is used in a
-            direct spill over stagnant water in a bid to disrupt the life cycle
-            of mosquitoes, the oil forms a film over the water not allowing the
+            <br />
+            <b> Oil Spill</b>:- “MLO” Malarial Larval Oil is used in a direct
+            spill over stagnant water in a bid to disrupt the life cycle of
+            mosquitoes, the oil forms a film over the water not allowing the
             larvae to breath, suffocating the larvae from breathing as it
             emerges from the bottom of the water at regular intervals.
-            <br /> <br />
+            <br />
+            <br />
             <b>2. RESIDUAL SPRAY</b>:- Residual Spray has over the recent years
             extended from just not being internal, extending to external areas
             too, as its understandable that mosquitoes are largely contributed
             from external settings, and if we have an ideal external and
             internal location such areas need to be under RESIDUAL SPRAY
             management. Residual Sprays comprises of layered spraying of HUMAN
-            &amp; PET SAFE being odorless &amp; colourless on the walls surface
+            &amp; PET SAFE being odorless &amp; colorless on the walls surface
             targeting resting mosquitoes. Efficacy of such sprays is sustainable
             also largely depending on environmental conditions.
-            <br /> <br />
+            <br />
+            <br />
             <b>3. KNOCKDOWN SPRAY</b>:- Knockdown spray have become safer and
             have the needed approvals from competent authorities in INDIA for
             internal use where humans inhabit. Its application immediately
@@ -71,7 +74,8 @@ const Treatment = ({ id }) => {
             sprays are sustainable when applied at the specified label claims,
             mild odor, but high efficacy makes this a choice for all external
             &amp; lawn / garden area applications.
-            <br /> <br />
+            <br />
+            <br />
             <b>4. MICRONING</b>:- Use of aqua based formulations dispensed in
             microns to open air using a power tool, resulting in floating
             airborne particles targeting flying mosquitoes while creating a film
@@ -80,15 +84,17 @@ const Treatment = ({ id }) => {
             dual effect. Our affiliation with BAYER gives our services a
             technically backed advantage. In microning applications,
             AQUAKOTHRINE is our preferred formulation.
-            <br /> <br />
+            <br />
+            <br />
             <b>5. FOGGING</b>
-            <br /> <b>Thermal-Fogging</b>:- Most preferred mode of mosquito
-            management, it provides a quick solution and a equally satisfying
-            visual proof, but over the recent years it is loosing it’s
-            preference over environmental concerns as diesel is the main carrier
-            of chemicals in this application process. Adult mosquitoes are
-            direly affected, as they would be exposed to the pesticide in the
-            thermal-fog-cloud. <br />
+            <br />
+            <b>Thermal-Fogging</b>:- Most preferred mode of mosquito management,
+            it provides a quick solution and a equally satisfying visual proof,
+            but over the recent years it is loosing it’s preference over
+            environmental concerns as diesel is the main carrier of chemicals in
+            this application process. Adult mosquitoes are direly affected, as
+            they would be exposed to the pesticide in the thermal-fog-cloud.
+            <br />
             <b>Landscape Fogging</b>:- India’s 1st vehicle mounted fogging
             machine in the private sector having dual capacity for cold &amp;
             thermal fogging. Having a dual capacity tank with more than 3 hours
@@ -97,10 +103,12 @@ const Treatment = ({ id }) => {
             application ideal for entire city and gated community applications.
             Our landscape fogger has been successfully operational from 2000 and
             has been used as a common platform for city disinfecting services
-            during covid-19. <br /> <b>SIMPLY GREEN</b>:- Is a concept of using
-            natural-extract oils or ready to use products in spray, vapour or
-            diffusers forms, bringing about additions to given space by adding
-            natural repellant for a given pest.
+            during covid-19.
+            <br />
+            <b>SIMPLY GREEN</b>:- Is a concept of using natural-extract oils or
+            ready to use products in spray, vapour or diffusers forms, bringing
+            about additions to given space by adding natural repellant for a
+            given pest.
           </>
         )}
       </p>
@@ -162,7 +170,9 @@ const Treatment = ({ id }) => {
             aim of implementing these services is to ensure the untreated
             walls/wood/gypsum boards/plywood/pop layout/brick works are all
             effectively treated to dissuade termite presence during the project
-            stage works. <br /> <br />
+            stage works.
+            <br />
+            <br />
             <b>6. Continued Injecting Process</b> is a new innovative process in
             termite management specifically designed after years of tracking the
             need to work around structures where there have been termite
