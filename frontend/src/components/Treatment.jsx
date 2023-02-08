@@ -197,6 +197,18 @@ const Treatment = ({ id }) => {
         )}
       </p>
     );
+  } else if (id === "rec1OUS7NZsERmxOu") {
+    return (
+      <p style={{ color: "#242a31" }}>
+        <b>Spot Treatment </b> is where only the affected given areas is treated
+        by Injecting Spraying application, this treatment is a one time spot on
+        application to affected areas with no follow-up visit.
+        <br />
+        <b>Annual Check </b> up treatment is when a given space is taken up for
+        repetitive treatments under the Injecting and Spraying process. Sealing
+        of shot holes is done using wax on certain occasions only.
+      </p>
+    );
   }
   return <div>Treatment</div>;
 };
